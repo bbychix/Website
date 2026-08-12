@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Chikomborero Chimuka — Software Developer</title>
+<meta name="description" content="Software developer and digital systems specialist in Harare, Zimbabwe, building web systems, AI-driven tools, automation and data management that measurably improve how organisations operate." />
+<meta property="og:title" content="Chikomborero Chimuka — Software Developer" />
+<meta property="og:description" content="Web systems, AI-driven tools, automation and data management. Harare, Zimbabwe." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #0A0B09; color: #F2F3EF; font-family: 'Archivo', Helvetica, Arial, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: #38d6ff; text-decoration: none; }
+  a:hover { color: #F2F3EF; }
+  button, input, textarea { font: inherit; color: inherit; }
+  ::selection { background: #38d6ff; color: #04121a; }
+  @keyframes om-marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+  :root { --grain: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNzAnIGhlaWdodD0nMTcwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC44NScgbnVtT2N0YXZlcz0nMycgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNuKScgb3BhY2l0eT0nMC40MicvPjwvc3ZnPg=="); }
+  @keyframes om-orbit { to { stroke-dashoffset: -810; } }
+  @keyframes om-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(7px); } }
+  @media (prefers-reduced-motion: reduce) { * { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
+</style>
+</helmet>
+<div style="--accent:#38d6ff; --accent-2:#7c8cff; --accent-3:#ff9a4d; --accent-glow:rgba(56,214,255,0.35); --bg:#0A0B09; --panel:#121410; --ink:#F2F3EF; --muted:#8E9188; --line:rgba(242,243,239,0.11);  background:#0A0B09; position:relative; width:100%; overflow:hidden;">
+
+
+  <canvas data-om-bgmech="" aria-hidden="true" style="position:fixed; inset:0; width:100%; height:100%; z-index:1; pointer-events:none; opacity:0.5;"></canvas>
+
+  <div data-om-progress="" style="position:fixed; top:0; left:0; height:2px; width:0%; background:linear-gradient(90deg,var(--accent),var(--accent-2) 60%,var(--accent-3)); box-shadow:0 0 14px var(--accent-glow); z-index:70; transition:width .1s linear;"></div>
+
+  <button type="button" data-om-menubtn="" aria-label="Open menu" style="position:fixed; top:clamp(14px,2.2vw,26px); right:clamp(14px,2.2vw,26px); z-index:80; display:flex; align-items:center; gap:10px; padding:11px 16px; min-height:44px; background:rgba(10,11,9,0.72); backdrop-filter:blur(14px); border:1px solid var(--line); cursor:pointer; font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink); transition:border-color .3s;" style-hover="border-color:#38d6ff">
+    <span data-om-menulabel="">Menu</span>
+    <span style="display:flex; flex-direction:column; gap:3px; width:14px;">
+      <span style="height:1px; background:var(--accent); display:block;"></span>
+      <span style="height:1px; background:var(--accent); display:block;"></span>
+    </span>
+  </button>
+
+  <nav data-om-overlay="" aria-hidden="true" style="position:fixed; inset:0; z-index:79; background:#0A0B09; display:none; flex-direction:column; justify-content:flex-start; overflow-y:auto; overscroll-behavior:contain; padding:clamp(74px,10vh,110px) clamp(24px,6vw,90px) clamp(32px,6vh,72px); gap:0;">
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:clamp(18px,4vh,38px); padding-bottom:clamp(16px,3vh,28px); border-bottom:1px solid var(--line);">
+      <span aria-hidden="true" style="width:32px; height:32px; flex:none; display:grid; place-items:center; background:linear-gradient(140deg,var(--accent),var(--accent-2)); color:#04121a; font:800 12px/1 'Archivo',sans-serif; letter-spacing:-0.02em; box-shadow:0 6px 22px -6px var(--accent-glow);">CC</span>
+      <span style="font-weight:700; font-size:14.5px; letter-spacing:-0.01em;">Chikomborero</span>
+    </div>
+    <a href="#home" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">Home</a>
+    <a href="#about" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">About</a>
+    <a href="#skills" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">Skills</a>
+    <a href="#hobbies" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">Beyond the screen</a>
+    <a href="#projects" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">Projects</a>
+    <a href="#experience" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">Experience</a>
+    <a href="#certificates" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">Certificates</a>
+    <a href="#contact" data-om-navlink="" style="display:flex; align-items:center; min-height:44px; padding:11px 14px; font:500 13px/1 'JetBrains Mono',monospace; letter-spacing:0.02em; color:var(--muted); border-bottom:1px solid var(--line); transition:color .3s, background .3s, padding-left .3s;" style-hover="color:#F2F3EF; background:rgba(242,243,239,0.06); padding-left:22px">Contact</a>
+    <div style="margin-top:clamp(18px,4vh,44px); display:flex; flex-wrap:wrap; gap:10px 26px; font:400 12px/1.5 'JetBrains Mono',monospace; color:var(--muted);">
+      <a href="mailto:chikoc2000@gmail.com" style="color:var(--muted);">chikoc2000@gmail.com</a>
+      <a href="https://github.com/bbychix" target="_blank" rel="noopener" style="color:var(--muted);">github.com/bbychix</a>
+      <span>Harare, Zimbabwe</span>
+    </div>
+  </nav>
+
+  <section id="home" data-screen-label="Hero" style="position:relative; z-index:2; height:180vh;">
+    <div data-om-herostage="" style="position:sticky; top:0; height:100vh; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+
+      <div data-om-heroportrait="" style="position:absolute; inset:0; transform:scale(1.06); transform-origin:center center; will-change:transform; z-index:1;">
+        <div style="position:absolute; inset:0; background:#04070A; overflow:hidden;">
+          <video data-om-herovideo="" src="assets/hero-eye.mp4" poster="assets/hero-eye-poster.jpg" muted="" loop="" playsinline="" preload="none" aria-label="A digital eye opening, systems running behind the iris" style="width:100%; height:100%; object-fit:cover; display:block; transform:translateZ(0); backface-visibility:hidden; filter:contrast(1.04) saturate(1.02) brightness(0.97);"></video>
+          <div style="position:absolute; inset:0; background:var(--grain); opacity:0.34; mix-blend-mode:overlay; pointer-events:none;"></div>
+          <div style="position:absolute; inset:0; background:radial-gradient(76% 70% at 50% 46%, rgba(10,11,9,0) 26%, rgba(10,11,9,0.58) 68%, rgba(10,11,9,0.92) 100%); pointer-events:none;"></div>
+          <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(10,11,9,0.72) 0%, rgba(10,11,9,0.1) 24%, rgba(10,11,9,0.28) 60%, #0A0B09 100%); pointer-events:none;"></div>
+        </div>
+      </div>
+
+      <div style="position:absolute; inset:0; background:radial-gradient(120% 80% at 50% 45%, rgba(10,11,9,0.1) 0%, rgba(10,11,9,0.68) 58%, rgba(10,11,9,0.9) 100%); z-index:2; pointer-events:none;"></div>
+
+      <div style="position:relative; z-index:3; width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between; padding:clamp(74px,10vh,120px) clamp(20px,5vw,80px) clamp(24px,4vh,52px); pointer-events:none;">
+        <h1 data-om-heroname="" style="margin:0; pointer-events:auto; font-weight:900; font-size:clamp(2.1rem,9.4vw,8.6rem); line-height:0.86; letter-spacing:-0.045em; text-transform:uppercase;">
+          <span data-om-heroline="" style="display:block; will-change:transform;"><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">C</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">h</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">i</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">k</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">o</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">m</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">b</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">o</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s; color:#38d6ff;">r</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s; color:#6aa7ff;">e</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s; color:#7c8cff;">r</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s; color:#ff9a4d;">o</span></span>
+          <span data-om-heroline="" style="display:block; will-change:transform; text-indent:0.06em;"><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">C</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">h</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">i</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">m</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">u</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">k</span><span data-om-letter="" style="display:inline-block; will-change:transform; transition:transform .5s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s;">a</span></span>
+        </h1>
+
+        <div data-om-herofoot="" style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:18px; border-top:1px solid var(--line); padding-top:clamp(14px,2vh,22px); will-change:transform;">
+          <p style="margin:0; max-width:44ch; font:500 clamp(13px,1.4vw,17px)/1.5 'JetBrains Mono',monospace; color:#C4C7BE;">Software Developer<br /><span><span style="color:#38d6ff;">D</span><span style="color:#6aa7ff;">i</span><span style="color:#7c8cff;">g</span><span style="color:#ff9a4d;">i</span><span style="color:#38d6ff;">t</span><span style="color:#6aa7ff;">a</span><span style="color:#7c8cff;">l</span> <span style="color:#ff9a4d;">S</span><span style="color:#38d6ff;">y</span><span style="color:#6aa7ff;">s</span><span style="color:#7c8cff;">t</span><span style="color:#ff9a4d;">e</span><span style="color:#38d6ff;">m</span><span style="color:#6aa7ff;">s</span> <span style="color:var(--muted);">&amp;</span> <span style="color:#38d6ff;">A</span><span style="color:#6aa7ff;">I</span> <span style="color:#7c8cff;">S</span><span style="color:#ff9a4d;">o</span><span style="color:#38d6ff;">l</span><span style="color:#6aa7ff;">u</span><span style="color:#7c8cff;">t</span><span style="color:#ff9a4d;">i</span><span style="color:#38d6ff;">o</span><span style="color:#6aa7ff;">n</span><span style="color:#7c8cff;">s</span></span></p>
+          <span style="display:flex; align-items:center; gap:10px; font:500 10px/1 'JetBrains Mono',monospace; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted);">scroll to explore<span style="display:block; width:1px; height:26px; background:linear-gradient(to bottom,var(--accent),transparent); animation:om-bob 2s ease-in-out infinite;"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Mechanism" style="position:relative; z-index:4; background:rgba(10,11,9,0.72); height:clamp(420px,86vh,860px); overflow:hidden; display:flex; align-items:center; justify-content:center;">
+    <canvas data-om-mech="" aria-label="Interactive three-dimensional gear mechanism" style="position:absolute; inset:0; width:100%; height:100%;"></canvas>
+    <div style="position:absolute; left:clamp(20px,5vw,80px); top:clamp(26px,6vh,64px); font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); pointer-events:none;">the mechanism</div>
+    <div style="position:absolute; bottom:clamp(24px,5vh,56px); left:0; right:0; text-align:center; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); pointer-events:none;">move your cursor to turn it</div>
+  </section>
+
+  <div style="background:linear-gradient(100deg,var(--accent),var(--accent-2) 58%,var(--accent-3)); color:#04121a; padding:clamp(11px,1.6vh,17px) 0; overflow:hidden; white-space:nowrap; position:relative; z-index:4;">
+    <div style="display:inline-flex; gap:clamp(24px,4vw,56px); animation:om-marquee 34s linear infinite; font:700 clamp(11px,1.3vw,14px)/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; padding-right:clamp(24px,4vw,56px);">
+      <span>web systems</span><span>◆</span><span>ai-driven tools</span><span>◆</span><span>process automation</span><span>◆</span><span>data management</span><span>◆</span><span>internal platforms</span><span>◆</span><span>technical problem solving</span><span>◆</span>
+      <span>web systems</span><span>◆</span><span>ai-driven tools</span><span>◆</span><span>process automation</span><span>◆</span><span>data management</span><span>◆</span><span>internal platforms</span><span>◆</span><span>technical problem solving</span><span>◆</span>
+    </div>
+  </div>
+
+  <section id="about" data-screen-label="About" style="position:relative; z-index:4; background:rgba(10,11,9,0.87); padding:clamp(76px,13vh,170px) clamp(20px,5vw,80px);">
+    <div style="max-width:1440px; margin:0 auto;">
+      <div style="display:flex; align-items:baseline; gap:clamp(12px,2vw,26px); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:clamp(34px,6vh,72px);">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; color:var(--accent);">02</span>
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted);">About</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(34px,5vw,80px); align-items:start;">
+        <div data-om-reveal="">
+          <h2 style="margin:0 0 clamp(24px,4vh,44px); font-weight:800; font-size:clamp(2.1rem,5.4vw,4.9rem); line-height:0.95; letter-spacing:-0.035em;">I build the system<br />behind the <span style="color:var(--accent);">process</span>.</h2>
+          <div data-om-type="" style="display:flex; flex-direction:column; gap:clamp(15px,2.4vh,26px); max-width:62ch; font-size:clamp(15px,1.15vw,17.5px); line-height:1.68; color:#B5B8AF; text-wrap:pretty;">
+            <p style="margin:0;">I'm a software developer and digital systems specialist focused on technology that measurably improves how organisations operate. My work sits where web development, AI-driven tooling, automation and data management meet — the practical middle ground where a good idea becomes something a team actually uses every day.</p>
+            <p style="margin:0;">What draws me in is the process itself. I want to understand how work really flows, find where it stalls, and rebuild that part so it is simpler and faster. That has meant custom internal systems, management platforms, scheduling and dispatch tools, digital record systems and AI-assisted workflows — replacing manual steps with software that holds up under daily use.</p>
+            <p style="margin:0;">Alongside the technical side I bring analytical thinking, close attention to detail and a habit of continuous learning. My goal is never simply to write software: it is to understand the problem underneath it and build technology that delivers real, measurable value.</p>
+          </div>
+        </div>
+
+        <div data-om-reveal="" style="display:flex; flex-direction:column; gap:clamp(20px,3vh,32px);">
+          <div data-om-aboutplate="" style="position:relative; background:#101208; border:1px solid var(--line); overflow:hidden; align-self:flex-start; width:100%; max-width:420px; will-change:transform;">
+            <img src="assets/img/portrait.jpg" loading="lazy" decoding="async" alt="Portrait of Chikomborero Chimuka" style="width:100%; display:block;" />
+          </div>
+          <dl style="margin:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line);">
+            <div style="background:var(--bg); padding:16px 18px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted); margin-bottom:8px;">Based in</dt><dd style="margin:0; font-weight:600; font-size:15px;">Harare, Zimbabwe</dd></div>
+            <div style="background:var(--bg); padding:16px 18px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted); margin-bottom:8px;">Focus</dt><dd style="margin:0; font-weight:600; font-size:15px;">Web systems · AI tooling</dd></div>
+            <div style="background:var(--bg); padding:16px 18px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted); margin-bottom:8px;">Core language</dt><dd style="margin:0; font-weight:600; font-size:15px;">Python</dd></div>
+            <div style="background:var(--bg); padding:16px 18px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted); margin-bottom:8px;">Open to</dt><dd style="margin:0; font-weight:600; font-size:15px;">Roles &amp; collaborations</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div data-om-stats="" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:clamp(18px,3vw,40px); margin-top:clamp(48px,8vh,110px); border-top:1px solid var(--line); padding-top:clamp(26px,4vh,44px);">
+        <div><div data-om-count="10" style="font-weight:800; font-size:clamp(2.6rem,6vw,5rem); line-height:0.9; letter-spacing:-0.04em; color:var(--accent);">10</div><div style="margin-top:10px; font:400 11px/1.4 'JetBrains Mono',monospace; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted);">certifications earned</div></div>
+        <div><div data-om-count="3" style="font-weight:800; font-size:clamp(2.6rem,6vw,5rem); line-height:0.9; letter-spacing:-0.04em; color:var(--accent);">3</div><div style="margin-top:10px; font:400 11px/1.4 'JetBrains Mono',monospace; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted);">professional roles</div></div>
+        <div><div data-om-count="4" style="font-weight:800; font-size:clamp(2.6rem,6vw,5rem); line-height:0.9; letter-spacing:-0.04em; color:var(--accent);">4</div><div style="margin-top:10px; font:400 11px/1.4 'JetBrains Mono',monospace; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted);">featured projects</div></div>
+        <div><div style="font-weight:800; font-size:clamp(2.6rem,6vw,5rem); line-height:0.9; letter-spacing:-0.04em; color:var(--accent);">#3</div><div style="margin-top:10px; font:400 11px/1.4 'JetBrains Mono',monospace; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted);">national hackathon finish</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" data-screen-label="Skills" style="position:relative; z-index:4; background:rgba(18,20,16,0.9); padding:clamp(76px,13vh,170px) clamp(20px,5vw,80px);">
+    <div style="max-width:1440px; margin:0 auto;">
+      <div style="display:flex; align-items:baseline; gap:clamp(12px,2vw,26px); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:clamp(30px,5vh,60px);">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; color:var(--accent);">03</span>
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted);">Skills</span>
+      </div>
+      <h2 data-om-reveal="" style="margin:0 0 14px; font-weight:800; font-size:clamp(2.1rem,5.4vw,4.9rem); line-height:0.95; letter-spacing:-0.035em;">What I work with.</h2>
+      <p data-om-reveal="" style="margin:0 0 clamp(34px,5vh,64px); max-width:56ch; font-size:clamp(15px,1.15vw,17.5px); line-height:1.62; color:var(--muted);">Six areas that shape how I approach a build — from the interface a person touches to the data underneath it.</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(14px,1.8vw,24px);">
+        <div data-om-tilt="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:rgba(18,20,16,0.6); padding:clamp(20px,2.4vw,30px); transform-style:preserve-3d; transition:transform .5s cubic-bezier(.22,1,.36,1), border-color .35s;"><img data-om-skillimg="" src="assets/img/sys-dashboard.jpg" loading="lazy" decoding="async" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; filter:grayscale(0.7) brightness(0.5) saturate(1.1); transform:scale(1.08); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1); pointer-events:none;" /><div data-om-skillveil="" style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,12,8,0.82), rgba(10,12,8,0.94)); opacity:0; transition:opacity .7s; pointer-events:none;"></div><div style="position:relative; z-index:2;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);">
+            <h3 style="margin:0; font-weight:800; font-size:clamp(16px,1.6vw,20px); line-height:1.15; letter-spacing:-0.02em;">Software &amp; Web Development</h3>
+            <span style="font:500 10px/1 'JetBrains Mono',monospace; color:var(--accent); flex:none;">01</span>
+          </div>
+          <ul style="margin:0; padding:0 0 0 18px; display:flex; flex-direction:column; gap:9px; font-size:14.5px; line-height:1.55; color:#A9ACA3;"><li>Website development and maintenance</li><li>Web-based system development</li><li>Front-end and back-end development</li><li>Website troubleshooting and optimisation</li><li>Practical digital solutions for organisational needs</li></ul>
+          </div>
+        </div>
+        <div data-om-tilt="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:rgba(18,20,16,0.6); padding:clamp(20px,2.4vw,30px); transform-style:preserve-3d; transition:transform .5s cubic-bezier(.22,1,.36,1), border-color .35s;"><img data-om-skillimg="" src="assets/img/sys-core.jpg" loading="lazy" decoding="async" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; filter:grayscale(0.7) brightness(0.5) saturate(1.1); transform:scale(1.08); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1); pointer-events:none;" /><div data-om-skillveil="" style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,12,8,0.82), rgba(10,12,8,0.94)); opacity:0; transition:opacity .7s; pointer-events:none;"></div><div style="position:relative; z-index:2;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);">
+            <h3 style="margin:0; font-weight:800; font-size:clamp(16px,1.6vw,20px); line-height:1.15; letter-spacing:-0.02em;">AI &amp; Intelligent Tools</h3>
+            <span style="font:500 10px/1 'JetBrains Mono',monospace; color:var(--accent); flex:none;">02</span>
+          </div>
+          <ul style="margin:0; padding:0 0 0 18px; display:flex; flex-direction:column; gap:9px; font-size:14.5px; line-height:1.55; color:#A9ACA3;"><li>AI-driven workflow solutions</li><li>Prompt engineering</li><li>AI-assisted automation</li><li>Development of internal AI tools</li><li>Applying AI to improve productivity and operations</li></ul>
+          </div>
+        </div>
+        <div data-om-tilt="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:rgba(18,20,16,0.6); padding:clamp(20px,2.4vw,30px); transform-style:preserve-3d; transition:transform .5s cubic-bezier(.22,1,.36,1), border-color .35s;"><img data-om-skillimg="" src="assets/img/sys-circuit.jpg" loading="lazy" decoding="async" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; filter:grayscale(0.7) brightness(0.5) saturate(1.1); transform:scale(1.08); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1); pointer-events:none;" /><div data-om-skillveil="" style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,12,8,0.82), rgba(10,12,8,0.94)); opacity:0; transition:opacity .7s; pointer-events:none;"></div><div style="position:relative; z-index:2;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);">
+            <h3 style="margin:0; font-weight:800; font-size:clamp(16px,1.6vw,20px); line-height:1.15; letter-spacing:-0.02em;">Digital Systems &amp; Automation</h3>
+            <span style="font:500 10px/1 'JetBrains Mono',monospace; color:var(--accent); flex:none;">03</span>
+          </div>
+          <ul style="margin:0; padding:0 0 0 18px; display:flex; flex-direction:column; gap:9px; font-size:14.5px; line-height:1.55; color:#A9ACA3;"><li>Internal management systems</li><li>Workflow and process automation</li><li>Scheduling and dispatch management</li><li>Digital record and information systems</li><li>Replacing manual processes with digital ones</li></ul>
+          </div>
+        </div>
+        <div data-om-tilt="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:rgba(18,20,16,0.6); padding:clamp(20px,2.4vw,30px); transform-style:preserve-3d; transition:transform .5s cubic-bezier(.22,1,.36,1), border-color .35s;"><img data-om-skillimg="" src="assets/img/sys-datacity.jpg" loading="lazy" decoding="async" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; filter:grayscale(0.7) brightness(0.5) saturate(1.1); transform:scale(1.08); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1); pointer-events:none;" /><div data-om-skillveil="" style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,12,8,0.82), rgba(10,12,8,0.94)); opacity:0; transition:opacity .7s; pointer-events:none;"></div><div style="position:relative; z-index:2;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);">
+            <h3 style="margin:0; font-weight:800; font-size:clamp(16px,1.6vw,20px); line-height:1.15; letter-spacing:-0.02em;">Data &amp; Analytical Skills</h3>
+            <span style="font:500 10px/1 'JetBrains Mono',monospace; color:var(--accent); flex:none;">04</span>
+          </div>
+          <ul style="margin:0; padding:0 0 0 18px; display:flex; flex-direction:column; gap:9px; font-size:14.5px; line-height:1.55; color:#A9ACA3;"><li>Data management</li><li>Data organisation and processing</li><li>Data-driven decision support</li><li>Identifying patterns and operational insights</li><li>Using information to improve business processes</li></ul>
+          </div>
+        </div>
+        <div data-om-tilt="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:rgba(18,20,16,0.6); padding:clamp(20px,2.4vw,30px); transform-style:preserve-3d; transition:transform .5s cubic-bezier(.22,1,.36,1), border-color .35s;"><img data-om-skillimg="" src="assets/img/sys-mesh.jpg" loading="lazy" decoding="async" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; filter:grayscale(0.7) brightness(0.5) saturate(1.1); transform:scale(1.08); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1); pointer-events:none;" /><div data-om-skillveil="" style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,12,8,0.82), rgba(10,12,8,0.94)); opacity:0; transition:opacity .7s; pointer-events:none;"></div><div style="position:relative; z-index:2;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);">
+            <h3 style="margin:0; font-weight:800; font-size:clamp(16px,1.6vw,20px); line-height:1.15; letter-spacing:-0.02em;">Technical Problem Solving</h3>
+            <span style="font:500 10px/1 'JetBrains Mono',monospace; color:var(--accent); flex:none;">05</span>
+          </div>
+          <ul style="margin:0; padding:0 0 0 18px; display:flex; flex-direction:column; gap:9px; font-size:14.5px; line-height:1.55; color:#A9ACA3;"><li>System troubleshooting</li><li>Technical issue diagnosis</li><li>Website and system maintenance</li><li>Identifying root causes of technical problems</li><li>Practical implementation of technology solutions</li></ul>
+          </div>
+        </div>
+        <div data-om-tilt="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:rgba(18,20,16,0.6); padding:clamp(20px,2.4vw,30px); transform-style:preserve-3d; transition:transform .5s cubic-bezier(.22,1,.36,1), border-color .35s;"><img data-om-skillimg="" src="assets/img/sys-flux.jpg" loading="lazy" decoding="async" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; filter:grayscale(0.7) brightness(0.5) saturate(1.1); transform:scale(1.08); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1); pointer-events:none;" /><div data-om-skillveil="" style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(10,12,8,0.82), rgba(10,12,8,0.94)); opacity:0; transition:opacity .7s; pointer-events:none;"></div><div style="position:relative; z-index:2;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:14px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);">
+            <h3 style="margin:0; font-weight:800; font-size:clamp(16px,1.6vw,20px); line-height:1.15; letter-spacing:-0.02em;">Professional Strengths</h3>
+            <span style="font:500 10px/1 'JetBrains Mono',monospace; color:var(--accent); flex:none;">06</span>
+          </div>
+          <ul style="margin:0; padding:0 0 0 18px; display:flex; flex-direction:column; gap:9px; font-size:14.5px; line-height:1.55; color:#A9ACA3;"><li>Analytical thinking &amp; problem-solving</li><li>Creativity and innovation</li><li>Attention to detail</li><li>Adaptability and independent learning</li><li>Clear communication &amp; continuous improvement</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies" data-screen-label="Beyond the screen" style="position:relative; z-index:4; background:rgba(18,20,16,0.9); padding:clamp(76px,13vh,170px) clamp(20px,5vw,80px);">
+    <div style="max-width:1440px; margin:0 auto;">
+      <div style="display:flex; align-items:baseline; gap:clamp(12px,2vw,26px); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:clamp(30px,5vh,60px);">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; color:var(--accent);">04</span>
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted);">Beyond the screen</span>
+      </div>
+      <h2 data-om-reveal="" style="margin:0 0 14px; font-weight:800; font-size:clamp(2.1rem,5.4vw,4.9rem); line-height:0.95; letter-spacing:-0.035em;">What keeps me <span style="color:var(--accent);">sharp</span>.</h2>
+      <p data-om-reveal="" style="margin:0 0 clamp(34px,5vh,64px); max-width:56ch; font-size:clamp(15px,1.15vw,17.5px); line-height:1.62; color:var(--muted);">Five things I return to. Each one trains something the work quietly depends on.</p>
+      <div data-om-hobbygrid="" style="display:grid; grid-template-columns:repeat(6,1fr); gap:clamp(12px,1.6vw,18px);">
+        <article data-om-hobby="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:#0E100B; min-height:clamp(300px,40vh,440px); display:flex; align-items:flex-end; transition:border-color .5s, box-shadow .5s;">
+          <img data-om-hobbyimg="" src="assets/img/hobby-chess.jpg" loading="lazy" decoding="async" alt="Chess" style="position:absolute; top:-6%; left:-6%; width:112%; height:112%; object-fit:cover; filter:grayscale(0.4) brightness(0.66); transition:filter .8s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1);" />
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,8,5,0.08) 0%, rgba(6,8,5,0.58) 52%, rgba(6,8,5,0.95) 100%); pointer-events:none;"></div>
+          <div style="position:relative; z-index:2; padding:clamp(20px,2.6vw,32px); width:100%;">
+            <div style="display:flex; align-items:center; gap:13px; margin-bottom:8px;">
+              <span aria-hidden="true" style="width:46px; height:46px; flex:none; display:grid; place-items:center; font-size:1.3rem; border:1px solid var(--line); background:rgba(8,10,6,0.66); backdrop-filter:blur(6px); transition:transform .5s cubic-bezier(.22,1,.36,1);" data-om-hobbyemoji="">♟️</span>
+              <div>
+                <h3 style="margin:0; font-weight:800; font-size:clamp(1.2rem,2vw,1.62rem); letter-spacing:-0.025em;">Chess</h3>
+                <div style="margin-top:4px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Strategy & patience</div>
+              </div>
+            </div>
+            <p data-om-hobbybody="" style="margin:0; max-width:52ch; font-size:14.8px; line-height:1.66; color:#BFC2B9; max-height:0; opacity:0; overflow:hidden; transition:max-height .65s cubic-bezier(.22,1,.36,1), opacity .5s, margin-top .65s cubic-bezier(.22,1,.36,1);">I play chess as a way of developing strategic thinking, patience and problem-solving. I particularly enjoy analysing positions, anticipating an opponent's moves and building creative strategies toward a strong outcome.</p>
+            <button type="button" data-om-hobbytoggle="" aria-expanded="false" style="display:none; margin-top:14px; align-items:center; gap:8px; min-height:44px; background:none; border:0; padding:0; cursor:pointer; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Read more <span data-om-hobbyplus="">+</span></button>
+          </div>
+        </article>
+        <article data-om-hobby="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:#0E100B; min-height:clamp(300px,40vh,440px); display:flex; align-items:flex-end; transition:border-color .5s, box-shadow .5s;">
+          <img data-om-hobbyimg="" src="assets/img/hobby-piano.jpg" loading="lazy" decoding="async" alt="Piano" style="position:absolute; top:-6%; left:-6%; width:112%; height:112%; object-fit:cover; filter:grayscale(0.4) brightness(0.66); transition:filter .8s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1);" />
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,8,5,0.08) 0%, rgba(6,8,5,0.58) 52%, rgba(6,8,5,0.95) 100%); pointer-events:none;"></div>
+          <div style="position:relative; z-index:2; padding:clamp(20px,2.6vw,32px); width:100%;">
+            <div style="display:flex; align-items:center; gap:13px; margin-bottom:8px;">
+              <span aria-hidden="true" style="width:46px; height:46px; flex:none; display:grid; place-items:center; font-size:1.3rem; border:1px solid var(--line); background:rgba(8,10,6,0.66); backdrop-filter:blur(6px); transition:transform .5s cubic-bezier(.22,1,.36,1);" data-om-hobbyemoji="">🎹</span>
+              <div>
+                <h3 style="margin:0; font-weight:800; font-size:clamp(1.2rem,2vw,1.62rem); letter-spacing:-0.025em;">Piano</h3>
+                <div style="margin-top:4px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Discipline & focus</div>
+              </div>
+            </div>
+            <p data-om-hobbybody="" style="margin:0; max-width:52ch; font-size:14.8px; line-height:1.66; color:#BFC2B9; max-height:0; opacity:0; overflow:hidden; transition:max-height .65s cubic-bezier(.22,1,.36,1), opacity .5s, margin-top .65s cubic-bezier(.22,1,.36,1);">Playing the piano is a creative outlet that lets me express myself through music. Learning and practising different pieces develops discipline, concentration, coordination and an appreciation for musical composition.</p>
+            <button type="button" data-om-hobbytoggle="" aria-expanded="false" style="display:none; margin-top:14px; align-items:center; gap:8px; min-height:44px; background:none; border:0; padding:0; cursor:pointer; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Read more <span data-om-hobbyplus="">+</span></button>
+          </div>
+        </article>
+        <article data-om-hobby="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:#0E100B; min-height:clamp(300px,40vh,440px); display:flex; align-items:flex-end; transition:border-color .5s, box-shadow .5s;">
+          <img data-om-hobbyimg="" src="assets/img/hobby-cooking.jpg" loading="lazy" decoding="async" alt="Cooking" style="position:absolute; top:-6%; left:-6%; width:112%; height:112%; object-fit:cover; filter:grayscale(0.4) brightness(0.66); transition:filter .8s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1);" />
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,8,5,0.08) 0%, rgba(6,8,5,0.58) 52%, rgba(6,8,5,0.95) 100%); pointer-events:none;"></div>
+          <div style="position:relative; z-index:2; padding:clamp(20px,2.6vw,32px); width:100%;">
+            <div style="display:flex; align-items:center; gap:13px; margin-bottom:8px;">
+              <span aria-hidden="true" style="width:46px; height:46px; flex:none; display:grid; place-items:center; font-size:1.3rem; border:1px solid var(--line); background:rgba(8,10,6,0.66); backdrop-filter:blur(6px); transition:transform .5s cubic-bezier(.22,1,.36,1);" data-om-hobbyemoji="">🍳</span>
+              <div>
+                <h3 style="margin:0; font-weight:800; font-size:clamp(1.2rem,2vw,1.62rem); letter-spacing:-0.025em;">Cooking</h3>
+                <div style="margin-top:4px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Precision & experimentation</div>
+              </div>
+            </div>
+            <p data-om-hobbybody="" style="margin:0; max-width:52ch; font-size:14.8px; line-height:1.66; color:#BFC2B9; max-height:0; opacity:0; overflow:hidden; transition:max-height .65s cubic-bezier(.22,1,.36,1), opacity .5s, margin-top .65s cubic-bezier(.22,1,.36,1);">Cooking combines creativity, precision and experimentation. I like exploring different recipes, ingredients and pastry techniques while creating meals that are both enjoyable and well presented.</p>
+            <button type="button" data-om-hobbytoggle="" aria-expanded="false" style="display:none; margin-top:14px; align-items:center; gap:8px; min-height:44px; background:none; border:0; padding:0; cursor:pointer; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Read more <span data-om-hobbyplus="">+</span></button>
+          </div>
+        </article>
+        <article data-om-hobby="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:#0E100B; min-height:clamp(300px,40vh,440px); display:flex; align-items:flex-end; transition:border-color .5s, box-shadow .5s;">
+          <img data-om-hobbyimg="" src="assets/img/hobby-cycling.jpg" loading="lazy" decoding="async" alt="Cycling" style="position:absolute; top:-6%; left:-6%; width:112%; height:112%; object-fit:cover; filter:grayscale(0.4) brightness(0.66); transition:filter .8s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1);" />
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,8,5,0.08) 0%, rgba(6,8,5,0.58) 52%, rgba(6,8,5,0.95) 100%); pointer-events:none;"></div>
+          <div style="position:relative; z-index:2; padding:clamp(20px,2.6vw,32px); width:100%;">
+            <div style="display:flex; align-items:center; gap:13px; margin-bottom:8px;">
+              <span aria-hidden="true" style="width:46px; height:46px; flex:none; display:grid; place-items:center; font-size:1.3rem; border:1px solid var(--line); background:rgba(8,10,6,0.66); backdrop-filter:blur(6px); transition:transform .5s cubic-bezier(.22,1,.36,1);" data-om-hobbyemoji="">🚴</span>
+              <div>
+                <h3 style="margin:0; font-weight:800; font-size:clamp(1.2rem,2vw,1.62rem); letter-spacing:-0.025em;">Cycling</h3>
+                <div style="margin-top:4px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Endurance & consistency</div>
+              </div>
+            </div>
+            <p data-om-hobbybody="" style="margin:0; max-width:52ch; font-size:14.8px; line-height:1.66; color:#BFC2B9; max-height:0; opacity:0; overflow:hidden; transition:max-height .65s cubic-bezier(.22,1,.36,1), opacity .5s, margin-top .65s cubic-bezier(.22,1,.36,1);">Cycling is something I enjoy for both recreation and fitness. I appreciate the sense of freedom it provides, alongside the challenge of improving endurance, staying consistent and exploring new routes.</p>
+            <button type="button" data-om-hobbytoggle="" aria-expanded="false" style="display:none; margin-top:14px; align-items:center; gap:8px; min-height:44px; background:none; border:0; padding:0; cursor:pointer; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Read more <span data-om-hobbyplus="">+</span></button>
+          </div>
+        </article>
+        <article data-om-hobby="" style="position:relative; overflow:hidden; border:1px solid var(--line); background:#0E100B; min-height:clamp(300px,40vh,440px); display:flex; align-items:flex-end; transition:border-color .5s, box-shadow .5s;">
+          <img data-om-hobbyimg="" src="assets/img/hobby-painting.jpg" loading="lazy" decoding="async" alt="Painting" style="position:absolute; top:-6%; left:-6%; width:112%; height:112%; object-fit:cover; filter:grayscale(0.4) brightness(0.66); transition:filter .8s cubic-bezier(.22,1,.36,1), transform 1.1s cubic-bezier(.22,1,.36,1);" />
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,8,5,0.08) 0%, rgba(6,8,5,0.58) 52%, rgba(6,8,5,0.95) 100%); pointer-events:none;"></div>
+          <div style="position:relative; z-index:2; padding:clamp(20px,2.6vw,32px); width:100%;">
+            <div style="display:flex; align-items:center; gap:13px; margin-bottom:8px;">
+              <span aria-hidden="true" style="width:46px; height:46px; flex:none; display:grid; place-items:center; font-size:1.3rem; border:1px solid var(--line); background:rgba(8,10,6,0.66); backdrop-filter:blur(6px); transition:transform .5s cubic-bezier(.22,1,.36,1);" data-om-hobbyemoji="">🎨</span>
+              <div>
+                <h3 style="margin:0; font-weight:800; font-size:clamp(1.2rem,2vw,1.62rem); letter-spacing:-0.025em;">Painting</h3>
+                <div style="margin-top:4px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Composition & detail</div>
+              </div>
+            </div>
+            <p data-om-hobbybody="" style="margin:0; max-width:52ch; font-size:14.8px; line-height:1.66; color:#BFC2B9; max-height:0; opacity:0; overflow:hidden; transition:max-height .65s cubic-bezier(.22,1,.36,1), opacity .5s, margin-top .65s cubic-bezier(.22,1,.36,1);">Painting lets me express creativity and attention to detail through colour, composition and visual storytelling. I enjoy experimenting with techniques and turning ideas or observations into something tangible and visually engaging.</p>
+            <button type="button" data-om-hobbytoggle="" aria-expanded="false" style="display:none; margin-top:14px; align-items:center; gap:8px; min-height:44px; background:none; border:0; padding:0; cursor:pointer; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Read more <span data-om-hobbyplus="">+</span></button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-screen-label="Projects" style="position:relative; z-index:4; background:rgba(10,11,9,0.87); padding:clamp(76px,13vh,170px) clamp(20px,5vw,80px);">
+    <div style="max-width:1440px; margin:0 auto;">
+      <div style="display:flex; align-items:baseline; gap:clamp(12px,2vw,26px); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:clamp(30px,5vh,60px);">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; color:var(--accent);">05</span>
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted);">Projects</span>
+      </div>
+
+      <h2 data-om-reveal="" style="margin:0 0 14px; font-weight:800; font-size:clamp(2.1rem,5.4vw,4.9rem); line-height:0.95; letter-spacing:-0.035em;">Selected work.</h2>
+      <p data-om-reveal="" style="margin:0 0 clamp(38px,6vh,80px); max-width:56ch; font-size:clamp(15px,1.15vw,17.5px); line-height:1.62; color:var(--muted);">Four builds that show the range — a machine learning competition entry, a climate data interface, a deployed Python game and a creative browser experiment.</p>
+
+      <div style="display:flex; flex-direction:column; gap:1px; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+
+        <a href="https://zindi.world/competitions/deep-learning-indabax-zimbabwe-2026-hackathon-ai-for-financial-inclusion-loan-default-prediction-in-zimbabwes-banking-sector/leaderboard" target="_blank" rel="noopener" data-om-project="" data-om-tilt="soft" style="display:grid; grid-template-columns:minmax(0,1fr); gap:0; background:var(--bg); color:var(--ink); padding:clamp(24px,4vh,44px) 0; transition:background .35s;" style-hover="background:#101208">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(20px,3vw,52px); align-items:center;">
+            <div style="position:relative; background:#0E100B; overflow:hidden; aspect-ratio:16/10;">
+              <img src="assets/img/sys-datacity.jpg" loading="lazy" decoding="async" alt="" data-om-projimg="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.62) contrast(1.05) brightness(0.9); transition:transform .6s cubic-bezier(.22,1,.36,1);" />
+              <div style="position:absolute; inset:0; background:var(--grain); opacity:0.4; mix-blend-mode:overlay;"></div>
+            </div>
+            <div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px 16px; margin-bottom:14px; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase;"><span style="color:var(--accent);">Machine Learning</span><span style="color:var(--muted);">2026</span></div>
+              <h3 style="margin:0 0 8px; font-weight:800; font-size:clamp(1.35rem,2.8vw,2.5rem); line-height:1.02; letter-spacing:-0.028em;">Bank Loan Default Prediction</h3>
+              <p style="margin:0 0 16px; font:400 13px/1.5 'JetBrains Mono',monospace; color:var(--muted);">Deep Learning IndabaX Zimbabwe Hackathon — AI for Financial Inclusion</p>
+              <p style="margin:0 0 20px; max-width:56ch; font-size:15px; line-height:1.62; color:#AFB2A9;">A machine learning model built with team GitHappens to predict loan default risk in Zimbabwe's banking sector, tackling financial inclusion through better credit decisioning. The team placed 13th overall on the competition leaderboard and finished 3rd in Zimbabwe.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:20px;"><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Team: GitHappens</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">3rd in Zimbabwe</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">13th overall</span></div>
+              <span style="display:inline-flex; align-items:center; gap:9px; font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); transition:transform .3s, color .3s;" data-om-cue="">View the leaderboard <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://bbychix.github.io/GitHappens/" target="_blank" rel="noopener" data-om-project="" data-om-tilt="soft" style="display:grid; grid-template-columns:minmax(0,1fr); gap:0; background:var(--bg); color:var(--ink); padding:clamp(24px,4vh,44px) 0; transition:background .35s;" style-hover="background:#101208">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(20px,3vw,52px); align-items:center;">
+            <div style="position:relative; background:#0E100B; overflow:hidden; aspect-ratio:16/10;">
+              <img src="assets/img/sys-circuit.jpg" loading="lazy" decoding="async" alt="" data-om-projimg="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.62) contrast(1.05) brightness(0.9); transition:transform .6s cubic-bezier(.22,1,.36,1);" />
+              <div style="position:absolute; inset:0; background:var(--grain); opacity:0.4; mix-blend-mode:overlay;"></div>
+            </div>
+            <div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px 16px; margin-bottom:14px; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase;"><span style="color:var(--accent);">Front-end · Data UX</span><span style="color:var(--muted);">2026</span></div>
+              <h3 style="margin:0 0 8px; font-weight:800; font-size:clamp(1.35rem,2.8vw,2.5rem); line-height:1.02; letter-spacing:-0.028em;">Agri-Climate Ledger</h3>
+              <p style="margin:0 0 16px; font:400 13px/1.5 'JetBrains Mono',monospace; color:var(--muted);">POTRAZ AI4I Challenge — Designer Track</p>
+              <p style="margin:0 0 20px; max-width:56ch; font-size:15px; line-height:1.62; color:#AFB2A9;">A district-level interface for rainfall, crop risk and farmgate prices — built for the people who act on the data rather than only report it. Visitors pick their role (extension officer, farmer association lead or food security planner) and the recommendations change with them; filters for province, crop, month and risk band update the charts and district ledger live. Built to WCAG 2.1 AA: 4.5:1 contrast, 44×44px touch targets, full keyboard navigation and text alternatives for every chart.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:20px;"><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">POTRAZ AI4I</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Designer track</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">WCAG 2.1 AA</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">20 districts · 6 crops</span></div>
+              <span style="display:inline-flex; align-items:center; gap:9px; font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); transition:transform .3s, color .3s;" data-om-cue="">Open the live project <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/bbychix/Python-twinkering" target="_blank" rel="noopener" data-om-project="" data-om-tilt="soft" style="display:grid; grid-template-columns:minmax(0,1fr); gap:0; background:var(--bg); color:var(--ink); padding:clamp(24px,4vh,44px) 0; transition:background .35s;" style-hover="background:#101208">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(20px,3vw,52px); align-items:center;">
+            <div style="position:relative; background:#0E100B; overflow:hidden; aspect-ratio:16/10;">
+              <img src="assets/img/sys-core.jpg" loading="lazy" decoding="async" alt="" data-om-projimg="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.62) contrast(1.05) brightness(0.9); transition:transform .6s cubic-bezier(.22,1,.36,1);" />
+              <div style="position:absolute; inset:0; background:var(--grain); opacity:0.4; mix-blend-mode:overlay;"></div>
+            </div>
+            <div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px 16px; margin-bottom:14px; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase;"><span style="color:var(--accent);">Python · Game</span><span style="color:var(--muted);">2025</span></div>
+              <h3 style="margin:0 0 8px; font-weight:800; font-size:clamp(1.35rem,2.8vw,2.5rem); line-height:1.02; letter-spacing:-0.028em;">Cross-Game Built in Python</h3>
+              <p style="margin:0 0 16px; font:400 13px/1.5 'JetBrains Mono',monospace; color:var(--muted);">Python Twinkering</p>
+              <p style="margin:0 0 20px; max-width:56ch; font-size:15px; line-height:1.62; color:#AFB2A9;">A deliberately constrained experiment: build and deploy a complete, playable game using a single Python library. The point was to show how far a tight toolset can go when the logic is clean — from first mechanic to a deployed, runnable result.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:20px;"><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Single library</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Built &amp; deployed</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Open source</span></div>
+              <span style="display:inline-flex; align-items:center; gap:9px; font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); transition:transform .3s, color .3s;" data-om-cue="">View on GitHub <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://bbychix.github.io/doodle-pad/" target="_blank" rel="noopener" data-om-project="" data-om-tilt="soft" style="display:grid; grid-template-columns:minmax(0,1fr); gap:0; background:var(--bg); color:var(--ink); padding:clamp(24px,4vh,44px) 0; transition:background .35s;" style-hover="background:#101208">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(20px,3vw,52px); align-items:center;">
+            <div style="position:relative; background:#0E100B; overflow:hidden; aspect-ratio:16/10;">
+              <img src="assets/img/sys-tunnel.jpg" loading="lazy" decoding="async" alt="" data-om-projimg="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.62) contrast(1.05) brightness(0.9); transition:transform .6s cubic-bezier(.22,1,.36,1);" />
+              <div style="position:absolute; inset:0; background:var(--grain); opacity:0.4; mix-blend-mode:overlay;"></div>
+            </div>
+            <div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px 16px; margin-bottom:14px; font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase;"><span style="color:var(--accent);">Creative · Browser</span><span style="color:var(--muted);">2025</span></div>
+              <h3 style="margin:0 0 8px; font-weight:800; font-size:clamp(1.35rem,2.8vw,2.5rem); line-height:1.02; letter-spacing:-0.028em;">Doodle Pad</h3>
+              <p style="margin:0 0 16px; font:400 13px/1.5 'JetBrains Mono',monospace; color:var(--muted);">Interactive browser sketch</p>
+              <p style="margin:0 0 20px; max-width:56ch; font-size:15px; line-height:1.62; color:#AFB2A9;">A lightweight creative build exploring drawing, input and motion in the browser — the kind of small experiment that keeps the fundamentals sharp between larger systems work.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:20px;"><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Canvas</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Interaction design</span></div>
+              <span style="display:inline-flex; align-items:center; gap:9px; font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); transition:transform .3s, color .3s;" data-om-cue="">Open the doodle pad <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" data-screen-label="Experience" style="position:relative; z-index:4; background:rgba(18,20,16,0.9); padding:clamp(76px,13vh,170px) clamp(20px,5vw,80px);">
+    <div style="max-width:1440px; margin:0 auto;">
+      <div style="display:flex; align-items:baseline; gap:clamp(12px,2vw,26px); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:clamp(30px,5vh,60px);">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; color:var(--accent);">06</span>
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted);">Experience</span>
+      </div>
+
+      <h2 data-om-reveal="" style="margin:0 0 clamp(38px,6vh,80px); font-weight:800; font-size:clamp(2.1rem,5.4vw,4.9rem); line-height:0.95; letter-spacing:-0.035em;">Where I've worked.</h2>
+
+      <div style="display:flex; flex-direction:column;">
+        <article data-om-reveal="" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(14px,3vw,52px); padding:clamp(24px,4vh,42px) 0; border-top:1px solid var(--line);">
+          <div>
+            <div style="font:500 12px/1 'JetBrains Mono',monospace; letter-spacing:0.1em; color:var(--accent); margin-bottom:12px;">Nov 2024 — Present</div>
+            <span style="display:inline-flex; align-items:center; gap:7px; font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink); border:1px solid var(--accent); padding:5px 10px;"><span style="width:5px; height:5px; border-radius:50%; background:var(--accent); display:block;"></span>Current</span>
+          </div>
+          <div style="grid-column:span 2;">
+            <div data-om-ovalwrap="" style="position:relative; display:inline-block;"><span data-om-oval="" aria-hidden="true" style="position:absolute; left:50%; top:50%; width:calc(100% + 76px); height:calc(100% + 44px); transform:translate(-50%,-50%); opacity:0; transition:opacity .55s cubic-bezier(.22,1,.36,1); pointer-events:none;"><svg viewBox="0 0 400 120" preserveAspectRatio="none" style="width:100%; height:100%; overflow:visible;"><ellipse cx="200" cy="60" rx="198" ry="58" fill="none" stroke="rgba(56,214,255,0.16)" stroke-width="1"></ellipse><ellipse data-om-ovalline="" cx="200" cy="60" rx="198" ry="58" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="110 700" stroke-dashoffset="0" style="filter:drop-shadow(0 0 6px var(--accent-glow));"></ellipse></svg></span><h3 style="margin:0 0 5px; font-weight:800; font-size:clamp(1.3rem,2.4vw,2.1rem); line-height:1.05; letter-spacing:-0.025em;">Systems Development</h3></div>
+            <p style="margin:0 0 16px; font:400 13px/1.4 'JetBrains Mono',monospace; color:var(--muted);">Riverview Primary School</p>
+            <p style="margin:0 0 18px; max-width:60ch; font-size:15px; line-height:1.62; color:#AFB2A9;">Developing and maintaining internal digital systems that support day-to-day school operations — building custom tools that replace manual record-keeping and administrative processes with software the staff can rely on.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Systems development</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Internal tools</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Maintenance</span></div>
+          </div>
+        </article>
+
+        <article data-om-reveal="" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(14px,3vw,52px); padding:clamp(24px,4vh,42px) 0; border-top:1px solid var(--line);">
+          <div><div style="font:500 12px/1 'JetBrains Mono',monospace; letter-spacing:0.1em; color:var(--muted); margin-bottom:12px;">Aug 2022 — Aug 2023</div></div>
+          <div style="grid-column:span 2;">
+            <div data-om-ovalwrap="" style="position:relative; display:inline-block;"><span data-om-oval="" aria-hidden="true" style="position:absolute; left:50%; top:50%; width:calc(100% + 76px); height:calc(100% + 44px); transform:translate(-50%,-50%); opacity:0; transition:opacity .55s cubic-bezier(.22,1,.36,1); pointer-events:none;"><svg viewBox="0 0 400 120" preserveAspectRatio="none" style="width:100%; height:100%; overflow:visible;"><ellipse cx="200" cy="60" rx="198" ry="58" fill="none" stroke="rgba(56,214,255,0.16)" stroke-width="1"></ellipse><ellipse data-om-ovalline="" cx="200" cy="60" rx="198" ry="58" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="110 700" stroke-dashoffset="0" style="filter:drop-shadow(0 0 6px var(--accent-glow));"></ellipse></svg></span><h3 style="margin:0 0 5px; font-weight:800; font-size:clamp(1.3rem,2.4vw,2.1rem); line-height:1.05; letter-spacing:-0.025em;">Data Management</h3></div>
+            <p style="margin:0 0 16px; font:400 13px/1.4 'JetBrains Mono',monospace; color:var(--muted);">StudyPartners</p>
+            <p style="margin:0 0 18px; max-width:60ch; font-size:15px; line-height:1.62; color:#AFB2A9;">Managed and organised operational data while supporting tutoring delivery, maintaining a consistent record of high-quality assistance and client satisfaction throughout the engagement.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Data management</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Client support</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Process</span></div>
+          </div>
+        </article>
+
+        <article data-om-reveal="" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(14px,3vw,52px); padding:clamp(24px,4vh,42px) 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+          <div><div style="font:500 12px/1 'JetBrains Mono',monospace; letter-spacing:0.1em; color:var(--muted); margin-bottom:12px;">Jan 2021 — Aug 2021</div></div>
+          <div style="grid-column:span 2;">
+            <div data-om-ovalwrap="" style="position:relative; display:inline-block;"><span data-om-oval="" aria-hidden="true" style="position:absolute; left:50%; top:50%; width:calc(100% + 76px); height:calc(100% + 44px); transform:translate(-50%,-50%); opacity:0; transition:opacity .55s cubic-bezier(.22,1,.36,1); pointer-events:none;"><svg viewBox="0 0 400 120" preserveAspectRatio="none" style="width:100%; height:100%; overflow:visible;"><ellipse cx="200" cy="60" rx="198" ry="58" fill="none" stroke="rgba(56,214,255,0.16)" stroke-width="1"></ellipse><ellipse data-om-ovalline="" cx="200" cy="60" rx="198" ry="58" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="110 700" stroke-dashoffset="0" style="filter:drop-shadow(0 0 6px var(--accent-glow));"></ellipse></svg></span><h3 style="margin:0 0 5px; font-weight:800; font-size:clamp(1.3rem,2.4vw,2.1rem); line-height:1.05; letter-spacing:-0.025em;">Systems Troubleshooting</h3></div>
+            <p style="margin:0 0 16px; font:400 13px/1.4 'JetBrains Mono',monospace; color:var(--muted);">Dairibord</p>
+            <p style="margin:0 0 18px; max-width:60ch; font-size:15px; line-height:1.62; color:#AFB2A9;">Diagnosed and resolved technical system issues, tracing faults to their root cause and restoring service — early, hands-on grounding in how operational systems behave under real production pressure.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:7px;"><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Troubleshooting</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Diagnostics</span><span style="border:1px solid var(--line); padding:6px 11px; font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.08em; text-transform:uppercase; color:#9DA097;">Support</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div data-om-reveal="" style="position:relative; overflow:hidden; margin-top:clamp(40px,6vh,80px); border:1px solid var(--line);">
+        <img src="assets/img/edu-classroom.webp" loading="lazy" decoding="async" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:grayscale(0.6) brightness(0.82) contrast(1.06); pointer-events:none;" />
+        <div style="position:absolute; inset:0; background:linear-gradient(105deg, rgba(10,12,8,0.93) 0%, rgba(10,12,8,0.82) 40%, rgba(10,12,8,0.62) 100%); pointer-events:none;"></div>
+        <div style="position:absolute; inset:0; background:var(--grain); opacity:0.3; mix-blend-mode:overlay; pointer-events:none;"></div>
+        <div style="position:relative; z-index:2; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(20px,3vw,52px); align-items:start; padding:clamp(24px,3.4vw,46px);">
+          <h3 style="margin:0; font-weight:800; font-size:clamp(1.5rem,3vw,2.4rem); line-height:1; letter-spacing:-0.03em;">Education</h3>
+          <div style="grid-column:span 2; display:flex; flex-direction:column; gap:clamp(20px,3vh,30px);">
+            <div style="display:flex; flex-direction:column; gap:9px;">
+              <div style="font-weight:700; font-size:clamp(16px,1.7vw,21px);">St John's Emerald Hill — Harare</div>
+              <div style="font:400 13.5px/1.5 'JetBrains Mono',monospace; color:#AFB2A9;">Ordinary Level · High School Diploma</div>
+              <div style="font:400 13.5px/1.5 'JetBrains Mono',monospace; color:#C3C6BD;">7 Ordinary Level passes</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:9px; padding-top:clamp(18px,2.6vh,26px); border-top:1px solid var(--line);">
+              <div style="font-weight:700; font-size:clamp(16px,1.7vw,21px);">Online Courses</div>
+              <div style="font:400 13.5px/1.5 'JetBrains Mono',monospace; color:#AFB2A9;">Relevant certifications</div>
+              <div style="font:400 13.5px/1.5 'JetBrains Mono',monospace; color:#C3C6BD;">CompTIA · EC-Council · StackSkills (2019 — 2025)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" data-screen-label="Certificates" style="position:relative; z-index:4; background:rgba(10,11,9,0.87); padding:clamp(76px,13vh,170px) clamp(20px,5vw,80px);">
+    <div style="max-width:1440px; margin:0 auto;">
+      <div style="display:flex; align-items:baseline; gap:clamp(12px,2vw,26px); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:clamp(30px,5vh,60px);">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; color:var(--accent);">07</span>
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted);">Certificates</span>
+      </div>
+
+      <h2 data-om-reveal="" style="margin:0 0 14px; font-weight:800; font-size:clamp(2.1rem,5.4vw,4.9rem); line-height:0.95; letter-spacing:-0.035em;">Verified certifications.</h2>
+      <p data-om-reveal="" style="margin:0 0 clamp(34px,5vh,64px); max-width:56ch; font-size:clamp(15px,1.15vw,17.5px); line-height:1.62; color:var(--muted);">Ten completed certifications across Python engineering, machine learning, data and cyber security. Select any certificate to view it in full.</p>
+
+      <div data-om-certgrid="" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr)); gap:clamp(14px,2vw,28px); perspective:1500px; perspective-origin:50% 26%;">
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-src="assets/certs/02-ethical-hacking-essentials.jpg" data-title="Ethical Hacking Essentials (EHE)" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/02-ethical-hacking-essentials.jpg" loading="lazy" decoding="async" alt="Ethical Hacking Essentials certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Cyber Security</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">Ethical Hacking Essentials (EHE)</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">EC-Council · 11 July 2023<br />Certificate no. 233132</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-src="assets/certs/01-black-hat-python.jpg" data-title="Black Hat Python: Python For Pentesters" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/01-black-hat-python.jpg" loading="lazy" decoding="async" alt="Black Hat Python certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Cyber Security</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">Black Hat Python: Python For Pentesters</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">CodeRed — from EC-Council · 21 April 2022<br />Certificate no. 159692</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-src="assets/certs/03-deep-learning-keras.jpg" data-title="The Deep Learning Masterclass: Classify Images with Keras" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/03-deep-learning-keras.jpg" loading="lazy" decoding="async" alt="Deep Learning Masterclass certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Machine Learning</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">The Deep Learning Masterclass: Classify Images with Keras</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 23 March 2022<br />Serial cert_8ni1x321</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-src="assets/certs/10-image-processing-python.jpg" data-title="Image Processing with Python — Build an Instagram-Style Filter" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/10-image-processing-python.jpg" loading="lazy" decoding="async" alt="Image Processing with Python certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Computer Vision</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">Image Processing with Python — Build an Instagram-Style Filter</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 22 May 2023<br />Course certificate</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-om-certextra="" data-src="assets/certs/06-python-data-visualization.jpg" data-title="The Complete Python Data Visualization Course" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/06-python-data-visualization.jpg" loading="lazy" decoding="async" alt="Python Data Visualization certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Data</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">The Complete Python Data Visualization Course</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 13 May 2022<br />Course certificate</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-om-certextra="" data-src="assets/certs/07-web-scraping-beautifulsoup.jpg" data-title="Web Scraping with Python and BeautifulSoup" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/07-web-scraping-beautifulsoup.jpg" loading="lazy" decoding="async" alt="Web Scraping with Python certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Data</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">Web Scraping with Python and BeautifulSoup</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 26 April 2022<br />Course certificate</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-om-certextra="" data-src="assets/certs/08-cyber-security-python-web.jpg" data-title="Cyber Security — Python and Web Applications" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/08-cyber-security-python-web.jpg" loading="lazy" decoding="async" alt="Cyber Security Python and Web Applications certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Cyber Security</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">Cyber Security — Python and Web Applications</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 11 April 2022<br />Course certificate</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-om-certextra="" data-src="assets/certs/09-learn-python3-game.jpg" data-title="Learn Python 3 by Making a Game" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/09-learn-python3-game.jpg" loading="lazy" decoding="async" alt="Learn Python 3 by Making a Game certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Python</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">Learn Python 3 by Making a Game</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 23 March 2022<br />Course certificate</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-om-certextra="" data-src="assets/certs/04-python3-masterclass.jpg" data-title="Python 3 Complete Masterclass — Make Your Job Tasks Easier" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/04-python3-masterclass.jpg" loading="lazy" decoding="async" alt="Python 3 Complete Masterclass certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Python</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">Python 3 Complete Masterclass — Make Your Job Tasks Easier</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 21 March 2022<br />Course certificate</span>
+          </span>
+        </button>
+
+        <button type="button" data-om-cert="" data-om-tilt="zoom" data-om-certextra="" data-src="assets/certs/05-python-from-0-to-1.jpg" data-title="From 0 to 1: Learn Python Programming — Easy as Pie" style="display:flex; flex-direction:column; text-align:left; background:none; border:1px solid var(--line); padding:0; cursor:pointer; overflow:hidden;" style-hover="border-color:#38d6ff">
+          <span style="position:relative; display:block; background:#0E100B; overflow:hidden; aspect-ratio:4/3;"><img src="assets/certs/05-python-from-0-to-1.jpg" loading="lazy" decoding="async" alt="From 0 to 1 Learn Python Programming certificate" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.4) contrast(1.03); transition:transform .55s cubic-bezier(.22,1,.36,1);" /></span>
+          <span style="display:flex; flex-direction:column; gap:7px; padding:18px;">
+            <span style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent);">Python</span>
+            <span style="font-weight:700; font-size:15.5px; line-height:1.3;">From 0 to 1: Learn Python Programming — Easy as Pie</span>
+            <span style="font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">StackSkills · 10 February 2022<br />Course certificate</span>
+          </span>
+        </button>
+      </div>
+
+      <button type="button" data-om-certexpand="" style="margin-top:clamp(22px,4vh,40px); display:inline-flex; align-items:center; gap:11px; min-height:44px; padding:14px 24px; background:none; border:1px solid var(--accent); cursor:pointer; font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); transition:background .3s, color .3s;" style-hover="background:#38d6ff; color:#0A0B09">
+        <span data-om-certexpandlabel="">Lay all ten out</span><span aria-hidden="true">↓</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="contact" data-screen-label="Contact" style="position:relative; z-index:4; background:rgba(18,20,16,0.9); padding:clamp(76px,13vh,170px) clamp(20px,5vw,80px) clamp(40px,6vh,70px);">
+    <div style="max-width:1440px; margin:0 auto;">
+      <div style="display:flex; align-items:baseline; gap:clamp(12px,2vw,26px); border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:clamp(34px,6vh,72px);">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; color:var(--accent);">08</span>
+        <span style="font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.2em; text-transform:uppercase; color:var(--muted);">Contact</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(34px,5vw,80px); align-items:start;">
+        <div data-om-reveal="">
+          <h2 style="margin:0 0 clamp(20px,3vh,32px); font-weight:800; font-size:clamp(2.1rem,5.4vw,4.6rem); line-height:0.95; letter-spacing:-0.035em;">Let's build something that <span style="color:var(--accent);">works</span>.</h2>
+          <p style="margin:0 0 clamp(28px,4vh,44px); max-width:52ch; font-size:clamp(15px,1.15vw,17.5px); line-height:1.65; color:#B5B8AF;">I'm always looking for opportunities to work on challenging projects, contribute to innovative teams and develop digital solutions that make a measurable difference.</p>
+
+          <dl style="margin:0; display:flex; flex-direction:column; gap:1px; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+            <div style="background:var(--panel); display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; padding:16px 2px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted);">Email</dt><dd style="margin:0;"><a href="mailto:chikoc2000@gmail.com" style="font:500 14.5px/1 'JetBrains Mono',monospace;">chikoc2000@gmail.com</a></dd></div>
+            <div data-om-phonerow="" style="background:var(--panel); display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; padding:16px 2px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted);">Phone</dt><dd style="margin:0;"><button type="button" data-om-phonebtn="" style="background:none; border:1px solid var(--line); padding:9px 14px; min-height:44px; cursor:pointer; font:500 12px/1 'JetBrains Mono',monospace; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent);">Reveal phone number</button></dd></div>
+            <div style="background:var(--panel); display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; padding:16px 2px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted);">GitHub</dt><dd style="margin:0;"><a href="https://github.com/bbychix" target="_blank" rel="noopener" style="font:500 14.5px/1 'JetBrains Mono',monospace;">@bbychix</a></dd></div>
+            <div style="background:var(--panel); display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; padding:16px 2px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted);">Location</dt><dd style="margin:0; font:500 14.5px/1 'JetBrains Mono',monospace; color:#B5B8AF;">Harare, Zimbabwe</dd></div>
+            <div style="background:var(--panel); display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; padding:16px 2px;"><dt style="font:400 10px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted);">Availability</dt><dd style="margin:0;"><button type="button" data-om-availbtn="" style="background:none; border:1px dashed rgba(56,214,255,0.38); padding:9px 14px; min-height:44px; cursor:pointer; font:500 12px/1 'JetBrains Mono',monospace; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent);">Check availability</button></dd></div>
+          </dl>
+
+          <a href="assets/Chikomborero-Chimuka-CV.pdf" download="Chikomborero-Chimuka-CV.pdf" style="margin-top:clamp(22px,3.5vh,36px); display:inline-flex; align-items:center; gap:11px; min-height:44px; padding:15px 26px; background:linear-gradient(100deg,var(--accent),var(--accent-2)); color:#04121a; box-shadow:0 10px 34px -10px var(--accent-glow); font:700 11px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; transition:opacity .3s;" style-hover="opacity:0.82; color:#0A0B09">Download CV <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <form data-om-form="" style="display:flex; flex-direction:column; gap:18px; border:1px solid var(--line); padding:clamp(22px,3.5vw,40px);">
+          <div style="font:500 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);">Send a message</div>
+          <label style="display:flex; flex-direction:column; gap:9px;"><span style="font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Your name</span><input type="text" name="name" required="" autocomplete="name" placeholder="Anesu Anotida" style="background:#0A0B09; border:1px solid var(--line); padding:14px 15px; min-height:44px; font-size:15px; outline:none; transition:border-color .25s;" style-focus="border-color:#38d6ff" /></label>
+          <label style="display:flex; flex-direction:column; gap:9px;"><span style="font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Your email</span><input type="email" name="email" required="" autocomplete="email" placeholder="anesu@company.co.zw" style="background:#0A0B09; border:1px solid var(--line); padding:14px 15px; min-height:44px; font-size:15px; outline:none; transition:border-color .25s;" style-focus="border-color:#38d6ff" /></label>
+          <label style="display:flex; flex-direction:column; gap:9px;"><span style="font:400 10.5px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted);">Message</span><textarea name="message" rows="5" required="" placeholder="..." style="background:#0A0B09; border:1px solid var(--line); padding:14px 15px; font-size:15px; line-height:1.6; resize:vertical; outline:none; transition:border-color .25s; font-family:'Archivo',Helvetica,Arial,sans-serif;" style-focus="border-color:#38d6ff"></textarea></label>
+          <button type="submit" style="display:inline-flex; align-items:center; justify-content:center; gap:11px; min-height:48px; padding:15px 26px; background:linear-gradient(100deg,var(--accent),var(--accent-2)); color:#04121a; box-shadow:0 10px 34px -10px var(--accent-glow); border:0; cursor:pointer; font:700 11px/1 'JetBrains Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; transition:opacity .3s;" style-hover="opacity:0.82">Send message <span aria-hidden="true">→</span></button>
+          <p data-om-formnote="" style="margin:0; font:400 11.5px/1.6 'JetBrains Mono',monospace; color:var(--muted);">Opens in your own email app, addressed to chikoc2000@gmail.com — nothing is sent from this page.</p>
+        </form>
+      </div>
+
+      <footer style="margin-top:clamp(48px,8vh,110px); border-top:1px solid var(--line); padding-top:clamp(20px,3vh,32px); display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:14px; font:400 11.5px/1.5 'JetBrains Mono',monospace; color:var(--muted);">
+        <span>Chikomborero Chimuka — Software Developer · Harare, Zimbabwe</span>
+        <span>References available on request.</span>
+        <a href="#home" style="color:var(--muted);">Back to top ↑</a>
+      </footer>
+    </div>
+  </section>
+
+  <div data-om-lightbox="" role="dialog" aria-modal="true" aria-hidden="true" style="position:fixed; inset:0; z-index:90; background:rgba(6,7,5,0.96); backdrop-filter:blur(6px); display:none; flex-direction:column; align-items:center; justify-content:center; gap:16px; padding:clamp(16px,4vw,56px);">
+    <div style="width:100%; max-width:1100px; display:flex; align-items:baseline; justify-content:space-between; gap:16px;">
+      <span data-om-lbtitle="" style="font:500 12px/1.4 'JetBrains Mono',monospace; color:var(--accent);"></span>
+      <button type="button" data-om-lbclose="" aria-label="Close certificate viewer" style="background:none; border:1px solid var(--line); min-height:44px; padding:11px 16px; cursor:pointer; font:500 11px/1 'JetBrains Mono',monospace; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink);">Close ✕</button>
+    </div>
+    <img data-om-lbimg="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" style="max-width:100%; max-height:70vh; object-fit:contain; border:1px solid var(--line);" />
+    <div style="display:flex; align-items:center; gap:12px;">
+      <button type="button" data-om-lbprev="" aria-label="Previous certificate" style="background:none; border:1px solid var(--line); min-height:44px; min-width:44px; padding:11px 18px; cursor:pointer; font:500 13px/1 'JetBrains Mono',monospace; color:var(--ink);">←</button>
+      <span data-om-lbcount="" style="font:400 11.5px/1 'JetBrains Mono',monospace; color:var(--muted);"></span>
+      <button type="button" data-om-lbnext="" aria-label="Next certificate" style="background:none; border:1px solid var(--line); min-height:44px; min-width:44px; padding:11px 18px; cursor:pointer; font:500 13px/1 'JetBrains Mono',monospace; color:var(--ink);">→</button>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#38d6ff&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#38d6ff&quot;,&quot;#7c8cff&quot;,&quot;#ff9a4d&quot;,&quot;#2FA6BC&quot;],&quot;section&quot;:&quot;Theme&quot;},&quot;showPhone&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contact&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const root = this.rootEl();
+    if (!root) return;
+    this.root = root;
+    document.documentElement.lang = 'en';
+    if (!document.title) document.title = 'Chikomborero Chimuka — Software Developer';
+    // Each block is isolated: one failing setup must never leave later sections dead.
+    const safe = (fn) => { try { fn.call(this); } catch (e) { console.warn('setup failed:', e); } };
+    this.safe = safe;
+    safe(this.applyAccent);
+    safe(this.setupScroll);
+    safe(this.setupReveals);
+    safe(this.setupMenu);
+    safe(this.setupHobbies);
+    safe(this.setupCerts);
+    safe(this.setupContact);
+    // React does not set `muted` from the attribute — it must be a property,
+    // and an unmuted video is blocked from autoplaying.
+    const hv = this.q('[data-om-herovideo]');
+    if (hv) {
+      hv.muted = true;
+      hv.defaultMuted = true;
+      hv.loop = true;
+      hv.setAttribute('muted', '');
+      hv.setAttribute('loop', '');
+      hv.addEventListener('ended', () => { hv.currentTime = 0; hv.play().catch(() => {}); });
+
+      // The clip is heavy, so it is only fetched once the hero is actually on screen,
+      // and it pauses whenever the reader scrolls away. The poster covers the gap.
+      let started = false;
+      const start = () => {
+        if (!started) { started = true; hv.preload = 'auto'; hv.load(); }
+        hv.play().catch(() => {});
+      };
+      const home = document.getElementById('home');
+      if (home && 'IntersectionObserver' in window) {
+        this.heroIO = new IntersectionObserver((es) => {
+          es.forEach((en) => { if (en.isIntersecting) start(); else if (started) hv.pause(); });
+        }, { threshold: 0.05 });
+        this.heroIO.observe(home);
+      } else {
+        start();
+      }
+      document.addEventListener('pointerdown', () => { if (started) hv.play().catch(() => {}); }, { once: true });
+    }
+    safe(this.setupNavBar);
+    safe(this.setupHeroName);
+    safe(this.setupTypeOnScroll);
+    safe(this.setupExperienceOvals);
+    safe(this.setupCertStack);
+    safe(this.setupTilt);
+    safe(this.setupMechanism);
+  }
+
+  /* ---- hero name: each letter reacts to the cursor, independent of scroll ---- */
+  setupHeroName() {
+    const h1 = this.q('[data-om-heroname]');
+    const letters = this.qa('[data-om-letter]');
+    if (!h1 || !letters.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const accent = (getComputedStyle(this.root).getPropertyValue('--accent') || '#38d6ff').trim();
+    const glow = (getComputedStyle(this.root).getPropertyValue('--accent-glow') || 'rgba(56,214,255,0.35)').trim();
+
+    const RADIUS = 190;
+    // Authored colours are captured ONCE — re-measuring must never sample a hover colour.
+    const BASE = letters.map((el) => el.style.color || '');
+    let boxes = [];
+    const measure = () => {
+      boxes = letters.map((el, i) => {
+        const r = el.getBoundingClientRect();
+        return { el, x: r.left + r.width / 2, y: r.top + r.height / 2, base: BASE[i] };
+      });
+    };
+    measure();
+
+    const reset = () => letters.forEach((el, i) => {
+      el.style.transform = '';
+      el.style.textShadow = '';
+      el.style.color = BASE[i];
+    });
+
+    const move = (ev) => {
+      boxes.forEach((b) => {
+        const dx = ev.clientX - b.x;
+        const dy = ev.clientY - b.y;
+        const d = Math.hypot(dx, dy);
+        if (d > RADIUS) {
+          b.el.style.transform = '';
+          b.el.style.textShadow = '';
+          b.el.style.color = b.base;
+          return;
+        }
+        const f = 1 - d / RADIUS;
+        b.el.style.transition = 'transform .22s ease-out, color .3s, text-shadow .3s';
+        b.el.style.transform = 'translate3d(' + (-dx * 0.14 * f).toFixed(1) + 'px,' + (-dy * 0.2 * f - 6 * f).toFixed(1) + 'px,0) scale(' + (1 + 0.16 * f).toFixed(3) + ') rotate(' + (dx * 0.02 * f).toFixed(2) + 'deg)';
+        if (f > 0.28) {
+          b.el.style.color = accent;
+          b.el.style.textShadow = '0 0 ' + Math.round(26 * f) + 'px ' + glow;
+        } else {
+          b.el.style.color = b.base;
+          b.el.style.textShadow = '';
+        }
+      });
+    };
+
+    const leave = () => {
+      letters.forEach((el) => { el.style.transition = 'transform .6s cubic-bezier(.22,1,.36,1), color .5s, text-shadow .5s'; });
+      reset();
+    };
+
+    // Tap feedback on touch: a quick ripple out from the tapped letter.
+    letters.forEach((el, i) => el.addEventListener('click', () => {
+      letters.forEach((o, j) => {
+        const f = Math.max(0, 1 - Math.abs(i - j) / 5);
+        if (!f) return;
+        o.style.transition = 'transform .45s cubic-bezier(.22,1,.36,1), color .45s';
+        o.style.transform = 'translate3d(0,' + (-14 * f).toFixed(1) + 'px,0) scale(' + (1 + 0.18 * f).toFixed(3) + ')';
+        o.style.color = f > 0.4 ? accent : BASE[j];
+        setTimeout(() => { o.style.transform = ''; o.style.color = BASE[j]; }, 420 + j * 18);
+      });
+    }));
+
+    h1.addEventListener('pointermove', move);
+    h1.addEventListener('pointerleave', leave);
+    this.onNameResize = () => { measure(); reset(); };
+    window.addEventListener('resize', this.onNameResize);
+    window.addEventListener('scroll', this.onNameResize, { passive: true });
+  }
+
+  /* ---- fixed nav bar: collapses to the menu button on narrow screens, scroll-spy ---- */
+  setupNavBar() {
+    const bar = this.q('[data-om-navbar]');
+    const links = this.qa('[data-om-spy]');
+    if (!bar) return;
+    const accent = (getComputedStyle(this.root).getPropertyValue('--accent') || '#38d6ff').trim();
+    const nav = this.q('[data-om-navlinks]');
+
+    const fit = () => {
+      const wide = window.innerWidth >= 1080;
+      if (nav) nav.style.display = wide ? 'flex' : 'none';
+    };
+    fit();
+
+    let lastY = window.scrollY;
+    const spy = () => {
+      const y = window.scrollY;
+      bar.style.transform = (y > 240 && y > lastY) ? 'translateY(-102%)' : 'translateY(0)';
+      lastY = y;
+
+      let active = null;
+      links.forEach((a) => {
+        const sec = document.querySelector(a.getAttribute('data-om-spy'));
+        if (sec && sec.getBoundingClientRect().top <= window.innerHeight * 0.36) active = a;
+      });
+      links.forEach((a) => {
+        const on = a === active;
+        a.style.color = on ? '#04121a' : 'var(--muted)';
+        a.style.background = on ? accent : 'transparent';
+        a.style.fontWeight = on ? '700' : '500';
+      });
+    };
+
+    this.onNavScroll = () => { if (!this.navRaf) this.navRaf = requestAnimationFrame(() => { this.navRaf = null; spy(); }); };
+    this.onNavResize = () => { fit(); spy(); };
+    window.addEventListener('scroll', this.onNavScroll, { passive: true });
+    window.addEventListener('resize', this.onNavResize);
+    spy();
+  }
+
+  /* ---- About: paragraphs type themselves out as the section scrolls past ---- */
+  setupTypeOnScroll() {
+    const box = this.q('[data-om-type]');
+    if (!box) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const paras = Array.from(box.querySelectorAll('p'));
+    if (!paras.length) return;
+
+    const full = paras.map((p) => p.textContent);
+    const lengths = full.map((t) => t.length);
+    const total = lengths.reduce((a, b) => a + b, 0);
+
+    // A caret rides the end of whatever is currently written.
+    const caret = document.createElement('span');
+    caret.setAttribute('aria-hidden', 'true');
+    caret.style.cssText = 'display:inline-block; width:8px; height:1.05em; margin-left:2px; vertical-align:-0.16em; background:var(--accent); box-shadow:0 0 10px var(--accent-glow);';
+
+    // Reserve each paragraph's final height up front so nothing below it jumps as
+    // the text fills in, and so the block never collapses to a few empty lines.
+    paras.forEach((p, i) => {
+      p.setAttribute('data-om-full', full[i]);
+      p.style.minHeight = p.getBoundingClientRect().height + 'px';
+      p.textContent = '';
+    });
+
+    let shown = -1;
+    let peak = 0;
+    const render = () => {
+      const r = box.getBoundingClientRect();
+      // 0 when the block's top reaches 78% of the viewport, 1 by the time it clears 26%
+      const p = Math.min(1, Math.max(0, (window.innerHeight * 0.78 - r.top) / (r.height * 0.72 + window.innerHeight * 0.3)));
+      // Typing only ever advances — scrolling back up must not erase the copy.
+      peak = Math.max(peak, Math.round(p * total));
+      const chars = peak;
+      if (chars === shown) return;
+      shown = chars;
+
+      let left = chars;
+      let caretPlaced = false;
+      paras.forEach((el, i) => {
+        const take = Math.max(0, Math.min(lengths[i], left));
+        left -= take;
+        if (el.firstChild && el.firstChild.nodeType === 3) el.firstChild.nodeValue = full[i].slice(0, take);
+        else el.textContent = full[i].slice(0, take);
+        if (!caretPlaced && take > 0 && take < lengths[i]) { el.appendChild(caret); caretPlaced = true; }
+      });
+      if (!caretPlaced && caret.parentNode) caret.parentNode.removeChild(caret);
+    };
+
+    // If the reader arrives with About already on screen (deep link, reload mid-page),
+    // there is no scroll left to drive the effect — show the copy in full.
+    const onScreenNow = () => {
+      const r = box.getBoundingClientRect();
+      return r.top < window.innerHeight * 0.6;
+    };
+    if (onScreenNow()) { peak = total; }
+
+    this.onTypeScroll = () => { if (!this.typeRaf) this.typeRaf = requestAnimationFrame(() => { this.typeRaf = null; render(); }); };
+    window.addEventListener('scroll', this.onTypeScroll, { passive: true });
+    window.addEventListener('resize', this.onTypeScroll);
+    render();
+
+    // Safety net: if the copy somehow never filled (no scroll events, odd viewport),
+    // reveal it in full rather than leaving the section blank.
+    setTimeout(() => { if (peak < total && onScreenNow()) { peak = total; render(); } }, 2600);
+  }
+
+  /* ---- experience: a faint line orbits an oval outline on hover / tap ---- */
+  setupExperienceOvals() {
+    const wraps = this.qa('[data-om-ovalwrap]');
+    if (!wraps.length) return;
+    const hoverable = () => window.matchMedia('(hover: hover) and (min-width: 760px)').matches;
+
+    wraps.forEach((wrap) => {
+      const article = wrap.closest('article') || wrap;
+      const oval = wrap.querySelector('[data-om-oval]');
+      const line = wrap.querySelector('[data-om-ovalline]');
+      if (!oval || !line) return;
+
+      const set = (on) => {
+        oval.style.opacity = on ? '1' : '0';
+        line.style.animation = on ? 'om-orbit 3.6s linear infinite' : 'none';
+      };
+      article.addEventListener('pointerenter', () => { if (hoverable()) set(true); });
+      article.addEventListener('pointerleave', () => { if (hoverable()) set(false); });
+      article.addEventListener('click', () => {
+        if (hoverable()) return;
+        const on = oval.style.opacity === '1';
+        wraps.forEach((w) => {
+          const o = w.querySelector('[data-om-oval]');
+          const l = w.querySelector('[data-om-ovalline]');
+          if (o) o.style.opacity = '0';
+          if (l) l.style.animation = 'none';
+        });
+        if (!on) set(true);
+      });
+    });
+  }
+
+  /* ---- certificates as an iOS-switcher style 3D stack ---- */
+  setupCertStack() {
+    const grid = this.q('[data-om-certgrid]');
+    if (!grid) return;
+    const cards = Array.from(grid.querySelectorAll('[data-om-cert]'));
+    if (!cards.length) return;
+
+    const EASE = 'transform 1.05s cubic-bezier(.16,.84,.24,1), box-shadow 1.05s, opacity .8s, border-color .6s';
+    const canStack = () => window.matchMedia('(hover: hover) and (min-width: 860px)').matches
+      && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let stacked = false;
+    let hovered = null;
+    this.certExpanded = false;
+
+    // Horizontal stack: cards overlap left-to-right at their normal card size,
+    // rightmost in front. Hovering pulls one toward the viewer.
+    const place = () => {
+      const w = grid.clientWidth;
+      const cardW = Math.round(Math.min(320, Math.max(236, w * 0.235)));
+      const peek = Math.max(44, Math.min(78, (w - cardW - 8) / (cards.length - 1)));
+      let tallest = 0;
+      cards.forEach((c) => { c.style.width = cardW + 'px'; });
+      cards.forEach((c) => { tallest = Math.max(tallest, c.offsetHeight); });
+      const startX = Math.max(0, (w - ((cards.length - 1) * peek + cardW)) / 2);
+
+      cards.forEach((card, i) => {
+        const depth = cards.length - 1 - i;
+        const lifted = card === hovered;
+        const x = Math.round(startX + i * peek);
+        card.style.zIndex = lifted ? '600' : String(i + 1);
+        card.style.transform = lifted
+          ? 'translate3d(' + x + 'px,-18px,90px) rotateY(0deg)'
+          : 'translate3d(' + x + 'px,0,' + (-depth * 8) + 'px) rotateY(-11deg)';
+        card.style.opacity = lifted ? '1' : String(Math.max(0.55, 1 - depth * 0.045));
+        card.style.boxShadow = lifted
+          ? '0 46px 90px -28px rgba(0,0,0,0.92)'
+          : '-22px 0 44px -22px rgba(0,0,0,0.92)';
+      });
+      grid.style.height = tallest + 'px';
+    };
+
+    const enable = () => {
+      stacked = true;
+      grid.style.display = 'block';
+      grid.style.position = 'relative';
+      cards.forEach((card) => {
+        card.setAttribute('data-om-stacked', '');
+        card.style.position = 'absolute';
+        card.style.left = '0';
+        card.style.right = 'auto';
+        card.style.top = '0';
+        card.style.marginLeft = '0';
+        card.style.transformOrigin = 'left center';
+        card.style.transition = EASE;
+        card.style.background = 'rgba(12,14,10,0.99)';
+      });
+      place();
+    };
+
+    const disable = () => {
+      stacked = false;
+      grid.style.position = '';
+      grid.style.height = '';
+      cards.forEach((card) => {
+        card.removeAttribute('data-om-stacked');
+        card.style.position = '';
+        card.style.left = card.style.right = card.style.top = '';
+        card.style.width = '';
+        card.style.marginLeft = '';
+        card.style.transform = '';
+        card.style.transformOrigin = '';
+        card.style.opacity = '';
+        card.style.zIndex = '';
+        card.style.boxShadow = '';
+        card.style.background = '';
+      });
+    };
+
+    // Expanded: five across, two rows.
+    const applyGrid = () => {
+      grid.style.display = 'grid';
+      grid.style.gridTemplateColumns = window.innerWidth >= 1120
+        ? 'repeat(5, minmax(0,1fr))'
+        : 'repeat(auto-fill,minmax(min(100%,220px),1fr))';
+    };
+
+    cards.forEach((card) => {
+      const on = () => { if (!stacked) return; hovered = card; place(); };
+      const off = () => { if (!stacked || hovered !== card) return; hovered = null; place(); };
+      card.addEventListener('pointerenter', on);
+      card.addEventListener('focus', on);
+      card.addEventListener('pointerleave', off);
+      card.addEventListener('blur', off);
+    });
+
+    this.syncCertMode = () => {
+      const want = canStack() && !this.certExpanded;
+      hovered = null;
+      if (stacked) disable();
+      if (want) enable();
+      else applyGrid();
+      const btn = this.q('[data-om-certexpand]');
+      if (btn) btn.style.display = canStack() ? 'inline-flex' : 'none';
+    };
+    this.relayoutCerts = () => this.syncCertMode();
+    this.syncCertMode();
+    window.addEventListener('resize', this.syncCertMode);
+  }
+
+  /* ---- procedural 3D gear mechanism (perspective-projected geometry) ---- */
+  setupMechanism() {
+    const stage = this.q('[data-om-mech]');
+    const bg = this.q('[data-om-bgmech]');
+    if (!stage && !bg) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const accent = (getComputedStyle(this.root).getPropertyValue('--accent') || '#38d6ff').trim();
+
+    // A gear = two rings of vertices (front/back z-plane) with a square tooth profile.
+    const gearRing = (teeth, r, root) => {
+      const pts = [];
+      for (let i = 0; i < teeth; i++) {
+        const a0 = (i / teeth) * Math.PI * 2;
+        const step = (Math.PI * 2) / teeth;
+        pts.push([a0, root], [a0 + step * 0.16, r], [a0 + step * 0.46, r], [a0 + step * 0.62, root]);
+      }
+      return pts;
+    };
+
+    const mkGear = (cfg) => Object.assign({ spin: 0, ring: gearRing(cfg.teeth, cfg.r, cfg.r * 0.84) }, cfg);
+
+    const scenes = [];
+
+    if (stage) {
+      scenes.push({
+        canvas: stage,
+        interactive: true,
+        tilt: { x: -0.42, y: 0.34 },
+        target: { x: -0.42, y: 0.34 },
+        alpha: 1,
+        gears: [
+          mkGear({ teeth: 26, r: 0.30, d: 0.030, cx: -0.16, cy: 0.02, cz: 0, rate: 0.16, w: 1.5 }),
+          mkGear({ teeth: 16, r: 0.185, d: 0.026, cx: 0.235, cy: -0.145, cz: 0.052, rate: -0.26, w: 1.3 }),
+          mkGear({ teeth: 12, r: 0.14, d: 0.022, cx: 0.20, cy: 0.235, cz: -0.05, rate: -0.35, w: 1.15 }),
+          mkGear({ teeth: 34, r: 0.40, d: 0.014, cx: -0.05, cy: 0.05, cz: -0.14, rate: 0.09, w: 0.7 })
+        ]
+      });
+    }
+    if (bg) {
+      scenes.push({
+        canvas: bg,
+        interactive: false,
+        tilt: { x: -0.5, y: 0.2 },
+        target: { x: -0.5, y: 0.2 },
+        alpha: 0.42,
+        gears: [
+          mkGear({ teeth: 44, r: 0.62, d: 0.02, cx: 0.34, cy: -0.18, cz: 0, rate: 0.035, w: 0.9 }),
+          mkGear({ teeth: 30, r: 0.40, d: 0.016, cx: -0.36, cy: 0.30, cz: 0.06, rate: -0.05, w: 0.8 })
+        ]
+      });
+    }
+
+    const fit = (sc) => {
+      const c = sc.canvas;
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      const r = c.getBoundingClientRect();
+      c.width = Math.max(1, Math.round(r.width * dpr));
+      c.height = Math.max(1, Math.round(r.height * dpr));
+      sc.ctx = c.getContext('2d');
+      sc.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      sc.w = r.width;
+      sc.h = r.height;
+      sc.unit = Math.min(r.width, r.height);
+    };
+
+    const project = (x, y, z, sc, tx, ty) => {
+      // rotateY then rotateX
+      let X = x * Math.cos(ty) + z * Math.sin(ty);
+      let Z = -x * Math.sin(ty) + z * Math.cos(ty);
+      let Y = y * Math.cos(tx) - Z * Math.sin(tx);
+      Z = y * Math.sin(tx) + Z * Math.cos(tx);
+      const f = 2.6;
+      const p = f / (f - Z);
+      return [sc.w / 2 + X * sc.unit * p, sc.h / 2 + Y * sc.unit * p, Z];
+    };
+
+    const drawGear = (sc, g, tx, ty) => {
+      const ctx = sc.ctx;
+      const faces = [g.d, -g.d];
+      const paths = faces.map((zoff) => g.ring.map(([a, rad]) => {
+        const ang = a + g.spin;
+        return project(g.cx + rad * Math.cos(ang), g.cy + rad * Math.sin(ang), g.cz + zoff, sc, tx, ty);
+      }));
+
+      // side walls
+      ctx.strokeStyle = 'rgba(242,243,239,0.10)';
+      ctx.lineWidth = g.w * 0.6;
+      ctx.beginPath();
+      for (let i = 0; i < paths[0].length; i += 2) {
+        ctx.moveTo(paths[1][i][0], paths[1][i][1]);
+        ctx.lineTo(paths[0][i][0], paths[0][i][1]);
+      }
+      ctx.stroke();
+
+      // back face
+      ctx.strokeStyle = 'rgba(242,243,239,0.13)';
+      ctx.lineWidth = g.w * 0.7;
+      ctx.beginPath();
+      paths[1].forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])));
+      ctx.closePath();
+      ctx.stroke();
+
+      // front face
+      ctx.strokeStyle = g.rate > 0 ? 'rgba(242,243,239,0.42)' : accent;
+      ctx.globalAlpha = g.rate > 0 ? 1 : 0.62;
+      ctx.lineWidth = g.w;
+      ctx.beginPath();
+      paths[0].forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])));
+      ctx.closePath();
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      // hub + spokes
+      const hub = [];
+      for (let i = 0; i < 40; i++) {
+        const ang = (i / 40) * Math.PI * 2 + g.spin;
+        hub.push(project(g.cx + g.r * 0.2 * Math.cos(ang), g.cy + g.r * 0.2 * Math.sin(ang), g.cz + g.d, sc, tx, ty));
+      }
+      ctx.strokeStyle = 'rgba(242,243,239,0.22)';
+      ctx.lineWidth = g.w * 0.7;
+      ctx.beginPath();
+      hub.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])));
+      ctx.closePath();
+      ctx.stroke();
+
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+        const ang = (i / 6) * Math.PI * 2 + g.spin;
+        const a = project(g.cx + g.r * 0.2 * Math.cos(ang), g.cy + g.r * 0.2 * Math.sin(ang), g.cz + g.d, sc, tx, ty);
+        const b = project(g.cx + g.r * 0.8 * Math.cos(ang), g.cy + g.r * 0.8 * Math.sin(ang), g.cz + g.d, sc, tx, ty);
+        ctx.moveTo(a[0], a[1]);
+        ctx.lineTo(b[0], b[1]);
+      }
+      ctx.stroke();
+    };
+
+    scenes.forEach(fit);
+
+    if (stage) {
+      stage.style.cursor = 'grab';
+      stage.addEventListener('pointermove', (ev) => {
+        const sc = scenes[0];
+        const r = stage.getBoundingClientRect();
+        sc.target.y = 0.34 + ((ev.clientX - r.left) / r.width - 0.5) * 1.15;
+        sc.target.x = -0.42 + ((ev.clientY - r.top) / r.height - 0.5) * 0.85;
+      });
+      stage.addEventListener('pointerleave', () => {
+        scenes[0].target.x = -0.42;
+        scenes[0].target.y = 0.34;
+      });
+    }
+
+    let last = performance.now();
+    const loop = (now) => {
+      const dt = Math.min(0.05, (now - last) / 1000);
+      last = now;
+      scenes.forEach((sc) => {
+        if (!sc.ctx) return;
+        sc.tilt.x += (sc.target.x - sc.tilt.x) * 0.07;
+        sc.tilt.y += (sc.target.y - sc.tilt.y) * 0.07;
+        sc.ctx.clearRect(0, 0, sc.w, sc.h);
+        sc.ctx.globalAlpha = 1;
+        sc.gears.forEach((g) => {
+          if (!reduced) g.spin += g.rate * dt;
+          sc.ctx.save();
+          sc.ctx.globalAlpha = sc.alpha;
+          drawGear(sc, g, sc.tilt.x, sc.tilt.y);
+          sc.ctx.restore();
+        });
+      });
+      this.mechRaf = requestAnimationFrame(loop);
+    };
+    this.mechRaf = requestAnimationFrame(loop);
+
+    this.onMechResize = () => scenes.forEach(fit);
+    window.addEventListener('resize', this.onMechResize);
+  }
+
+  /* ---- cursor-tracked 3D tilt on the Practice cards ---- */
+  setupTilt() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!window.matchMedia('(hover: hover)').matches) return;
+
+    const accent = (getComputedStyle(this.root).getPropertyValue('--accent') || '#38d6ff').trim();
+    const glow = /^#[0-9a-f]{6}$/i.test(accent) ? accent + '24' : 'rgba(56,214,255,0.16)';
+    const PRESET = {
+      '': { ry: 7, rx: 6, z: 14, img: 1 },
+      soft: { ry: 4.5, rx: 3.5, z: 10, img: 1.07 },
+      zoom: { ry: 0, rx: 0, z: 0, img: 1.16, scale: 1.055, staticOnly: true }
+    };
+
+    this.qa('[data-om-tilt]').forEach((card) => {
+      const cfg = PRESET[card.getAttribute('data-om-tilt') || ''] || PRESET[''];
+      const inStack = () => card.hasAttribute('data-om-stacked');
+      const skillImg = card.querySelector('[data-om-skillimg]');
+      const skillVeil = card.querySelector('[data-om-skillveil]');
+      const pic = skillImg ? null : card.querySelector('img');
+      const cue = card.querySelector('[data-om-cue]');
+      const sheen = document.createElement('span');
+      sheen.setAttribute('aria-hidden', 'true');
+      sheen.style.cssText = 'position:absolute; inset:0; opacity:0; pointer-events:none; transition:opacity .4s; z-index:2;';
+      if (getComputedStyle(card).position === 'static') card.style.position = 'relative';
+      card.appendChild(sheen);
+
+      const move = (ev) => {
+        if (inStack()) return;
+        const r = card.getBoundingClientRect();
+        const nx = (ev.clientX - r.left) / r.width - 0.5;
+        const ny = (ev.clientY - r.top) / r.height - 0.5;
+        card.style.transition = 'transform .18s ease-out, background .35s, border-color .35s';
+        card.style.transform = 'perspective(1000px) rotateY(' + (nx * cfg.ry).toFixed(2) + 'deg) rotateX(' + (-ny * cfg.rx).toFixed(2) + 'deg) translateZ(' + cfg.z + 'px)';
+        card.style.zIndex = '3';
+        if (pic && cfg.img > 1) pic.style.transform = 'scale(' + cfg.img + ') translate3d(' + (-nx * 14).toFixed(1) + 'px,' + (-ny * 14).toFixed(1) + 'px,0)';
+        if (cue) { cue.style.color = accent; cue.style.transform = 'translateX(6px)'; }
+        if (skillImg) { skillImg.style.opacity = '0.5'; skillImg.style.transform = 'scale(1)'; }
+        if (skillVeil) skillVeil.style.opacity = '1';
+        card.style.borderColor = accent;
+        sheen.style.opacity = '1';
+        sheen.style.background = 'radial-gradient(340px circle at ' + ((nx + 0.5) * 100).toFixed(1) + '% ' + ((ny + 0.5) * 100).toFixed(1) + '%, ' + glow + ', transparent 62%)';
+      };
+
+      // Certificates: a straight zoom on hover — the card lifts and the certificate
+      // scales up in place. No cursor tracking.
+      const zoomIn = () => {
+        if (inStack()) return;
+        card.style.transition = 'transform 1.05s cubic-bezier(.16,.84,.24,1), border-color .6s, box-shadow 1.05s';
+        card.style.transform = 'scale(' + cfg.scale + ')';
+        card.style.boxShadow = '0 26px 60px -24px rgba(0,0,0,0.85)';
+        card.style.zIndex = '3';
+        if (pic) pic.style.transform = 'scale(' + cfg.img + ')';
+        sheen.style.opacity = '1';
+        sheen.style.background = 'radial-gradient(120% 90% at 50% 0%, ' + glow + ', transparent 70%)';
+      };
+      const leave = () => {
+        if (inStack()) return;
+        card.style.transition = cfg.staticOnly
+          ? 'transform 1.15s cubic-bezier(.16,.84,.24,1), border-color .6s, box-shadow 1.15s'
+          : 'transform .55s cubic-bezier(.22,1,.36,1), background .35s, border-color .35s, box-shadow .55s';
+        card.style.transform = cfg.staticOnly ? 'scale(1)' : 'perspective(1000px) rotateY(0deg) rotateX(0deg) translateZ(0)';
+        card.style.boxShadow = 'none';
+        card.style.zIndex = '';
+        if (pic) pic.style.transform = '';
+        if (skillImg) { skillImg.style.opacity = '0'; skillImg.style.transform = 'scale(1.08)'; }
+        if (skillVeil) skillVeil.style.opacity = '0';
+        if (card.hasAttribute('data-om-skillcard') || skillImg) card.style.borderColor = '';
+        if (cue) { cue.style.color = ''; cue.style.transform = ''; }
+        sheen.style.opacity = '0';
+      };
+
+      if (cfg.staticOnly) {
+        card.addEventListener('pointerenter', zoomIn);
+        card.addEventListener('focus', zoomIn);
+      } else {
+        card.addEventListener('pointermove', move);
+      }
+      card.addEventListener('pointerleave', leave);
+      card.addEventListener('blur', leave, true);
+    });
+  }
+
+  componentDidUpdate() { this.applyAccent(); }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+    document.removeEventListener('keydown', this.onKey);
+    if (this.io) this.io.disconnect();
+    if (this.heroIO) this.heroIO.disconnect();
+    if (this.raf) cancelAnimationFrame(this.raf);
+    if (this.mechRaf) cancelAnimationFrame(this.mechRaf);
+    if (this.onMechResize) window.removeEventListener('resize', this.onMechResize);
+    if (this.syncCertMode) window.removeEventListener('resize', this.syncCertMode);
+    if (this.layoutHobbies) window.removeEventListener('resize', this.layoutHobbies);
+    if (this.onNavScroll) window.removeEventListener('scroll', this.onNavScroll);
+    if (this.onNavResize) window.removeEventListener('resize', this.onNavResize);
+    if (this.onTypeScroll) { window.removeEventListener('scroll', this.onTypeScroll); window.removeEventListener('resize', this.onTypeScroll); }
+    if (this.onNameResize) { window.removeEventListener('resize', this.onNameResize); window.removeEventListener('scroll', this.onNameResize); }
+  }
+
+  rootEl() {
+    const n = this._node || (this._node = document.querySelector('[data-om-herostage]'));
+    return n ? n.closest('div[style*="--accent"]') : null;
+  }
+
+  q(sel) { return this.root.querySelector(sel); }
+  qa(sel) { return Array.from(this.root.querySelectorAll(sel)); }
+
+  applyAccent() {
+    if (!this.root) return;
+    const a = this.props.accentColor;
+    if (a) this.root.style.setProperty('--accent', a);
+    const showPhone = this.props.showPhone !== false;
+    const row = this.q('[data-om-phonerow]');
+    if (row) row.style.display = showPhone ? 'flex' : 'none';
+  }
+
+  /* ---- pinned hero scroll sequence ---- */
+  setupScroll() {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const heroSection = this.q('#home');
+    const portrait = this.q('[data-om-heroportrait]');
+    const lines = this.qa('[data-om-heroline]');
+    const foot = this.q('[data-om-herofoot]');
+    const eyebrow = this.q('[data-om-heroeyebrow]');
+    const bar = this.q('[data-om-progress]');
+    const plate = this.q('[data-om-aboutplate]');
+    const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+
+    const tick = () => {
+      this.raf = null;
+      const doc = document.documentElement;
+      const total = doc.scrollHeight - window.innerHeight;
+      if (bar) bar.style.width = (total > 0 ? clamp(window.scrollY / total, 0, 1) * 100 : 0) + '%';
+
+      if (heroSection && portrait && !reduced) {
+        const span = heroSection.offsetHeight - window.innerHeight;
+        const p = span > 0 ? clamp((window.scrollY - heroSection.offsetTop) / span, 0, 1) : 0;
+        const e = p * p * (3 - 2 * p);
+        // Full-bleed video settles out of frame — no travel into About.
+        portrait.style.transform = 'translate3d(0,' + (-22 * e) + 'px,0) scale(' + (1.06 - 0.05 * e) + ')';
+        portrait.style.opacity = String(1 - clamp((e - 0.18) / 0.5, 0, 1));
+        lines.forEach((el, i) => {
+          el.style.transform = 'translate3d(0,' + (-(i === 0 ? 34 : 74) * e) + 'px,0)';
+          el.style.opacity = String(1 - 0.9 * clamp((e - 0.35) / 0.5, 0, 1));
+        });
+        if (foot) { foot.style.transform = 'translate3d(0,' + (44 * e) + 'px,0)'; foot.style.opacity = String(1 - e); }
+        if (eyebrow) eyebrow.style.opacity = String(1 - e);
+      }
+
+      if (plate && !reduced) {
+        const r = plate.getBoundingClientRect();
+        const c = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight;
+        plate.style.transform = 'translate3d(0,' + clamp(-c * 16, -16, 16) + 'px,0)';
+      }
+    };
+
+    this.onScroll = () => { if (!this.raf) this.raf = requestAnimationFrame(tick); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    tick();
+  }
+
+  /* ---- scroll reveals + counters ---- */
+  setupReveals() {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = this.qa('[data-om-reveal]');
+    if (!reduced) targets.forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translate3d(0,26px,0)';
+      el.style.transition = 'opacity .8s cubic-bezier(.22,1,.36,1) ' + (i % 3) * 0.07 + 's, transform .8s cubic-bezier(.22,1,.36,1) ' + (i % 3) * 0.07 + 's';
+    });
+
+    const counters = this.qa('[data-om-count]');
+    const runCount = (el) => {
+      const to = parseInt(el.getAttribute('data-om-count'), 10);
+      if (!to || reduced) return;
+      const start = performance.now();
+      const step = (now) => {
+        const t = Math.min(1, (now - start) / 900);
+        el.textContent = String(Math.round(to * (1 - Math.pow(1 - t, 3))));
+        if (t < 1) requestAnimationFrame(step);
+      };
+      el.textContent = '0';
+      requestAnimationFrame(step);
+    };
+
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        const el = en.target;
+        if (el.hasAttribute('data-om-reveal')) { el.style.opacity = '1'; el.style.transform = 'none'; }
+        if (el.hasAttribute('data-om-stats')) counters.forEach(runCount);
+        this.io.unobserve(el);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+    targets.forEach((el) => this.io.observe(el));
+    const stats = this.q('[data-om-stats]');
+    if (stats) this.io.observe(stats);
+  }
+
+  /* ---- menu overlay ---- */
+  setupMenu() {
+    const btn = this.q('[data-om-menubtn]');
+    const label = this.q('[data-om-menulabel]');
+    const overlay = this.q('[data-om-overlay]');
+    if (!btn || !overlay) return;
+    this.menuOpen = false;
+
+    const set = (open) => {
+      this.menuOpen = open;
+      overlay.style.display = open ? 'flex' : 'none';
+      overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (label) label.textContent = open ? 'Close' : 'Menu';
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = open ? 'hidden' : '';
+      if (open) overlay.scrollTop = 0;
+    };
+    this.setMenu = set;
+
+    btn.addEventListener('click', () => set(!this.menuOpen));
+    const oClose = this.q('[data-om-overlayclose]');
+    if (oClose) oClose.addEventListener('click', () => set(false));
+    this.qa('[data-om-navlink]').forEach((a) => a.addEventListener('click', () => set(false)));
+
+    this.onKey = (ev) => {
+      if (ev.key !== 'Escape' && ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
+      if (this.lbOpen) {
+        if (ev.key === 'Escape') this.closeLb();
+        if (ev.key === 'ArrowLeft') this.stepLb(-1);
+        if (ev.key === 'ArrowRight') this.stepLb(1);
+        return;
+      }
+      if (ev.key === 'Escape' && this.menuOpen) set(false);
+    };
+    document.addEventListener('keydown', this.onKey);
+  }
+
+  /* ---- hobbies: image mosaic, hover on desktop / tap on touch ---- */
+  setupHobbies() {
+    const grid = this.q('[data-om-hobbygrid]');
+    const cards = this.qa('[data-om-hobby]');
+    if (!cards.length) return;
+    const accent = (getComputedStyle(this.root).getPropertyValue('--accent') || '#38d6ff').trim();
+    const hoverable = () => window.matchMedia('(hover: hover) and (min-width: 760px)').matches;
+
+    const open = (card, on) => {
+      const body = card.querySelector('[data-om-hobbybody]');
+      const img = card.querySelector('[data-om-hobbyimg]');
+      const emoji = card.querySelector('[data-om-hobbyemoji]');
+      const plus = card.querySelector('[data-om-hobbyplus]');
+      const btn = card.querySelector('[data-om-hobbytoggle]');
+      if (body) {
+        body.style.maxHeight = on ? Math.min(300, body.scrollHeight) + 'px' : '0px';
+        body.style.opacity = on ? '1' : '0';
+        body.style.marginTop = on ? '12px' : '0px';
+      }
+      if (img) {
+        img.style.transform = on ? 'scale(1.11)' : 'scale(1)';
+        img.style.filter = on ? 'grayscale(0.1) brightness(0.82) saturate(1.1)' : 'grayscale(0.4) brightness(0.66)';
+      }
+      if (emoji) emoji.style.transform = on ? 'translateY(-3px) rotate(-6deg) scale(1.06)' : '';
+      card.style.borderColor = on ? accent : '';
+      card.style.boxShadow = on ? '0 28px 66px -30px rgba(0,0,0,0.9)' : 'none';
+      if (plus) plus.textContent = on ? '−' : '+';
+      if (btn) btn.setAttribute('aria-expanded', on ? 'true' : 'false');
+    };
+
+    cards.forEach((card) => {
+      const btn = card.querySelector('[data-om-hobbytoggle]');
+      card.addEventListener('pointerenter', () => { if (hoverable()) open(card, true); });
+      card.addEventListener('pointerleave', () => { if (hoverable()) open(card, false); });
+      if (btn) btn.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        cards.forEach((o) => { if (o !== card) open(o, false); });
+        open(card, !isOpen);
+      });
+    });
+
+    // Mosaic: 3+3 / 2+2+2 on wide, 2-up on tablet, single column on phones.
+    // Touch devices get the "Read more" button instead of hover.
+    const SPANS = { wide: [3, 3, 2, 2, 2], mid: [1, 1, 1, 1, 2], narrow: [1, 1, 1, 1, 1] };
+    this.layoutHobbies = () => {
+      if (!grid) return;
+      const w = grid.clientWidth;
+      const mode = w >= 980 ? 'wide' : w >= 620 ? 'mid' : 'narrow';
+      grid.style.gridTemplateColumns = 'repeat(' + (mode === 'wide' ? 6 : mode === 'mid' ? 2 : 1) + ',1fr)';
+      cards.forEach((card, i) => {
+        card.style.gridColumn = 'span ' + SPANS[mode][i];
+        const btn = card.querySelector('[data-om-hobbytoggle]');
+        if (btn) btn.style.display = hoverable() ? 'none' : 'inline-flex';
+        if (!hoverable()) open(card, btn && btn.getAttribute('aria-expanded') === 'true');
+      });
+    };
+    this.layoutHobbies();
+    window.addEventListener('resize', this.layoutHobbies);
+  }
+
+  /* ---- certificates: expander + lightbox ---- */
+  setupCerts() {
+    const grid = this.q('[data-om-certgrid]');
+    const expand = this.q('[data-om-certexpand]');
+    const expandLabel = this.q('[data-om-certexpandlabel]');
+    if (expand) expand.addEventListener('click', () => {
+      this.certExpanded = !this.certExpanded;
+      if (expandLabel) expandLabel.textContent = this.certExpanded ? 'Stack them back' : 'Lay all ten out';
+      expand.setAttribute('aria-expanded', this.certExpanded ? 'true' : 'false');
+      if (this.syncCertMode) this.syncCertMode();
+    });
+
+    const lb = this.q('[data-om-lightbox]');
+    const img = this.q('[data-om-lbimg]');
+    const title = this.q('[data-om-lbtitle]');
+    const count = this.q('[data-om-lbcount]');
+    const cards = this.qa('[data-om-cert]');
+    if (!lb || !img) return;
+
+    const show = (i) => {
+      const n = cards.length;
+      this.lbIndex = ((i % n) + n) % n;
+      const card = cards[this.lbIndex];
+      // Read the card's own rendered image, not data-src: when this page is bundled
+      // into a single file the img src becomes a blob/data URI while data-src does not.
+      const thumb = card.querySelector('img');
+      img.src = (thumb && thumb.src) || card.getAttribute('data-src');
+      img.alt = card.getAttribute('data-title');
+      if (title) title.textContent = card.getAttribute('data-title');
+      if (count) count.textContent = (this.lbIndex + 1) + ' / ' + n;
+    };
+    this.stepLb = (d) => show(this.lbIndex + d);
+    this.closeLb = () => {
+      this.lbOpen = false;
+      lb.style.display = 'none';
+      lb.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    cards.forEach((card, i) => card.addEventListener('click', () => {
+      this.lbOpen = true;
+      show(i);
+      lb.style.display = 'flex';
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }));
+
+    const close = this.q('[data-om-lbclose]');
+    if (close) close.addEventListener('click', () => this.closeLb());
+    lb.addEventListener('click', (ev) => { if (ev.target === lb) this.closeLb(); });
+    const prev = this.q('[data-om-lbprev]');
+    const next = this.q('[data-om-lbnext]');
+    if (prev) prev.addEventListener('click', () => this.stepLb(-1));
+    if (next) next.addEventListener('click', () => this.stepLb(1));
+
+    let sx = null;
+    lb.addEventListener('touchstart', (ev) => { sx = ev.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', (ev) => {
+      if (sx === null) return;
+      const dx = ev.changedTouches[0].clientX - sx;
+      if (Math.abs(dx) > 48) this.stepLb(dx < 0 ? 1 : -1);
+      sx = null;
+    }, { passive: true });
+  }
+
+  /* ---- contact: phone reveal + mailto form ---- */
+  setupContact() {
+    const pbtn = this.q('[data-om-phonebtn]');
+    if (pbtn) pbtn.addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.href = 'tel:+263775844577';
+      a.textContent = '+263 77 584 4577';
+      a.style.cssText = "font:500 14.5px/1 'JetBrains Mono',monospace;";
+      pbtn.replaceWith(a);
+    });
+
+    const abtn = this.q('[data-om-availbtn]');
+    if (abtn) abtn.addEventListener('click', () => {
+      const span = document.createElement('span');
+      span.textContent = 'Open to roles, freelance briefs and collaborations';
+      span.style.cssText = "display:block; max-width:34ch; text-align:right; font:500 13px/1.5 'JetBrains Mono',monospace; color:#B5B8AF;";
+      abtn.replaceWith(span);
+    });
+
+    const form = this.q('[data-om-form]');
+    const note = this.q('[data-om-formnote]');
+    if (!form) return;
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const d = new FormData(form);
+      const name = (d.get('name') || '').toString().trim();
+      const email = (d.get('email') || '').toString().trim();
+      const msg = (d.get('message') || '').toString().trim();
+      const subject = 'Portfolio enquiry from ' + (name || 'a visitor');
+      const body = msg + '\n\n—\n' + name + '\n' + email;
+      window.location.href = 'mailto:chikoc2000@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      if (note) { note.textContent = 'Your email app should now be open with the message ready to send. If nothing happened, write to chikoc2000@gmail.com directly.'; note.style.color = '#38d6ff'; }
+    });
+  }
+}
+
+</script>
+</body>
+</html>
