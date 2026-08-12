@@ -2,8 +2,7 @@
 
 Personal portfolio site. Software developer and digital systems specialist based in Harare, Zimbabwe.
 
-**Live:** https://bbychix.github.io/portfolio/
-
+**Live:** https://bbychix.github.io/Website/
 ## About
 
 A single-page scroll-driven portfolio covering background, skills, interests,
